@@ -30,7 +30,7 @@
           </ul>
         </nav>
         <div class="site-header__util">
-          <a href="<?php site_url('/anmeldung')?>" class="btn btn--small btn--orange float-left push-right">Anmelden</a>
+          <a href="<?php echo site_url('/anmeldung')?>" class="btn btn--small btn--orange float-left push-right">Anmelden</a>
           <span class="search-trigger js-search-trigger"><i class="fa fa-search" aria-hidden="true"></i></span>
         </div>
       </div>
