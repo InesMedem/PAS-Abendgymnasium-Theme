@@ -15,11 +15,14 @@
         <div class="site-header__menu group">
           <nav class="main-navigation">
             <ul>
-              <li><a href="#">About Us</a></li>
+              <?php wp_nav_menu(array(
+                'theme_location' => 'headerMenuLocation'
+              )) ?>
+              <!-- <li><a href="#">About Us</a></li>
               <li><a href="#">Programs</a></li>
               <li><a href="#">Events</a></li>
               <li><a href="#">Campuses</a></li>
-              <li><a href="#">Blog</a></li>
+              <li><a href="#">Blog</a></li> -->
             </ul>
           </nav>
           <div class="site-header__util">

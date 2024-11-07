@@ -12,6 +12,8 @@ add_action('wp_enqueue_scripts', 'PAS_files');
 
 
 function PAS_features() {
+    register_nav_menu('headerMenuLocation', 'Header Menu Location');
+    register_nav_menu('footerMenuLocation', 'Footer Menu Location');
     add_theme_support('title-tag');
 }
 
