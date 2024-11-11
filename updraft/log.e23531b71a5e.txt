@@ -1,0 +1,79 @@
+0000.001 () Opened log file at time: Sun, 10 Nov 2024 05:55:54 +0000 on http://localhost:10014
+0000.001 () UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.24.7 WP: 6.6.2 PHP: 8.1.29 (fpm-fcgi, Darwin Iness-Air-2.lan 23.2.0 Darwin Kernel Version 23.2.0: Wed Nov 15 21:53:34 PST 2023; root:xnu-10002.61.3~2/RELEASE_ARM64_T8103 arm64) MySQL: 8.0.16 (max packet size=33554432) WPLANG: en_US Server: nginx/1.16.0 safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 5.5M | 6M) multisite: N openssl: OpenSSL 1.1.1w  11 Sep 2023 mcrypt: N LANG:  ZipArchive::addFile: Y
+0000.001 () Free space on disk containing Updraft's temporary directory: 67400.3 MB
+0000.017 () Restore setup, now closing connection and starting restore over AJAX.
+0000.002 () Opened log file at time: Sun, 10 Nov 2024 05:55:54 +0000 on http://localhost:10014
+0000.003 () UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.24.7 WP: 6.6.2 PHP: 8.1.29 (fpm-fcgi, Darwin Iness-Air-2.lan 23.2.0 Darwin Kernel Version 23.2.0: Wed Nov 15 21:53:34 PST 2023; root:xnu-10002.61.3~2/RELEASE_ARM64_T8103 arm64) MySQL: 8.0.16 (max packet size=33554432) WPLANG: en_US Server: nginx/1.16.0 safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 4.6M | 8M) multisite: N openssl: OpenSSL 1.1.1w  11 Sep 2023 mcrypt: N LANG:  ZipArchive::addFile: Y
+0000.003 () Free space on disk containing Updraft's temporary directory: 67400 MB
+0000.003 () Ensuring WP_Filesystem is setup for a restore
+0000.004 () WP_Filesystem is setup and ready for a restore
+0000.007 () Restore job started. Entities to restore: db. Restore options: {"include_unspecified_tables":false,"tables_to_restore":["wp_options","wp_users","wp_usermeta","wp_commentmeta","wp_comments","wp_links","wp_postmeta","wp_posts","wp_term_relationships","wp_term_taxonomy","wp_termmeta","wp_terms"],"tables_to_skip":[],"updraft_encryptionphrase":"","updraft_restorer_wpcore_includewpconfig":false,"updraft_incremental_restore_point":-1}
+0000.009 () PHP event: code E_WARNING: mkdir(): File exists (line 558, wp-admin/includes/class-wp-filesystem-direct.php)
+0000.010 () Will not delete any archives after unpacking them, because there was no cloud storage for this backup
+0000.011 () Entity: db
+0000.011 () restore_backup(backup_file=backup_2024-11-10-0515_PASAbendgymnasium_345427ffab8c-db.gz, type=db, info=a:0:{}, last_one=1)
+0000.011 () Unpacking backup... (backup_2024-11-10-0515_PASAbendgymnasium_345427ffab8c-db.gz, 0.4 Mb)
+0000.011 () PHP event: code E_WARNING: mkdir(): File exists (line 558, wp-admin/includes/class-wp-filesystem-direct.php)
+0000.012 () Database successfully unpacked
+0000.012 () Restoring the database (on a large site this can take a long time - if it times out (which can happen if your web hosting company has configured your hosting to limit resources) then you should use a different method, such as phpMyAdmin)...
+0000.012 () Using direct MySQL access; value of use_mysqli is: 1
+0000.013 () SQL compatibility mode is: NO_AUTO_VALUE_ON_ZERO,NO_ZERO_IN_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION
+0000.093 () Max packet size: 32 MB
+0000.093 () Entering maintenance mode
+0000.093 () Enabling Maintenance mode&#8230;
+0000.102 () Backup of: http://localhost:10014
+0000.102 () Content URL: http://localhost:10014/wp-content
+0000.102 () Uploads URL: http://localhost:10014/wp-content/uploads
+0000.102 () Old table prefix: wp_
+0000.102 () UpdraftPlus plugin slug: updraftplus/updraftplus.php
+0000.102 () Site information: multisite=0
+0000.102 () Site information: sql_mode=NO_ZERO_IN_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION
+0000.103 () Skipped execution of SQL statement (unwanted or internally handled type=18): /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+0000.103 () New table prefix: 9y_
+0000.104 () Processing table (InnoDB): wp_options - will restore as: 9y_options
+0000.169 () Atomic restore: dropping original table (wp_options)
+0000.181 () Atomic restore: renaming new table (9y_options) to final table name (wp_options)
+0000.186 () Restoring prior UD configuration (table: wp_options; keys: 4)
+0000.191 () Processing table (InnoDB): wp_users - will restore as: 9y_users
+0000.201 () Atomic restore: dropping original table (wp_users)
+0000.205 () Atomic restore: renaming new table (9y_users) to final table name (wp_users)
+0000.208 () Processing table (InnoDB): wp_usermeta - will restore as: 9y_usermeta
+0000.221 () Atomic restore: dropping original table (wp_usermeta)
+0000.224 () Atomic restore: renaming new table (9y_usermeta) to final table name (wp_usermeta)
+0000.227 () Processing table (InnoDB): wp_commentmeta - will restore as: 9y_commentmeta
+0000.235 () Atomic restore: dropping original table (wp_commentmeta)
+0000.238 () Atomic restore: renaming new table (9y_commentmeta) to final table name (wp_commentmeta)
+0000.243 () Processing table (InnoDB): wp_comments - will restore as: 9y_comments
+0000.255 () Atomic restore: dropping original table (wp_comments)
+0000.259 () Atomic restore: renaming new table (9y_comments) to final table name (wp_comments)
+0000.263 () Processing table (InnoDB): wp_links - will restore as: 9y_links
+0000.270 () Atomic restore: dropping original table (wp_links)
+0000.273 () Atomic restore: renaming new table (9y_links) to final table name (wp_links)
+0000.277 () Processing table (InnoDB): wp_postmeta - will restore as: 9y_postmeta
+0000.318 () Atomic restore: dropping original table (wp_postmeta)
+0000.323 () Atomic restore: renaming new table (9y_postmeta) to final table name (wp_postmeta)
+0000.327 () Processing table (InnoDB): wp_posts - will restore as: 9y_posts
+0000.389 () Atomic restore: dropping original table (wp_posts)
+0000.395 () Atomic restore: renaming new table (9y_posts) to final table name (wp_posts)
+0000.399 () Processing table (InnoDB): wp_term_relationships - will restore as: 9y_term_relationships
+0000.407 () Atomic restore: dropping original table (wp_term_relationships)
+0000.410 () Atomic restore: renaming new table (9y_term_relationships) to final table name (wp_term_relationships)
+0000.413 () Processing table (InnoDB): wp_term_taxonomy - will restore as: 9y_term_taxonomy
+0000.422 () Atomic restore: dropping original table (wp_term_taxonomy)
+0000.424 () Atomic restore: renaming new table (9y_term_taxonomy) to final table name (wp_term_taxonomy)
+0000.427 () Processing table (InnoDB): wp_termmeta - will restore as: 9y_termmeta
+0000.434 () Atomic restore: dropping original table (wp_termmeta)
+0000.435 () Atomic restore: renaming new table (9y_termmeta) to final table name (wp_termmeta)
+0000.438 () Processing table (InnoDB): wp_terms - will restore as: 9y_terms
+0000.447 () Skipped execution of SQL statement (unwanted or internally handled type=18): /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+0000.454 () Unlocking database and leaving maintenance mode
+0000.454 () Disabling Maintenance mode&#8230;
+0000.454 () Atomic restore: dropping original table (wp_terms)
+0000.457 () Atomic restore: renaming new table (9y_terms) to final table name (wp_terms)
+0000.460 () Finished: lines processed: 45 in 0.44 seconds
+0000.460 () Cleaning up rubbish...
+0000.460 () Begin search and replace (updraftplus_restored_db)
+0000.460 () [Database-replace-site-url] Database: search and replace site URL
+0000.460 () This option was not selected.
+0000.470 () Restore successful!
+0000.470 () Restore successful

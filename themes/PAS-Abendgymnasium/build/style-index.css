@@ -397,7 +397,8 @@ li {
 body.login .button-primary {
   background-color: #f95738;
   border-color: #f83e1a;
-  text-shadow: 0 -1px 1px #f8320c, 1px 0 1px #f8320c, 0 1px 1px #f8320c, -1px 0 1px #f8320c;
+  text-shadow: 0 -1px 1px #f8320c, 1px 0 1px #f8320c, 0 1px 1px #f8320c,
+    -1px 0 1px #f8320c;
   box-shadow: 0 1px 0 #ed2c07;
 }
 body.login .button-primary:active,
@@ -405,7 +406,8 @@ body.login .button-primary:focus,
 body.login .button-primary:hover {
   background-color: #f8411d;
   border-color: #f95738;
-  text-shadow: 0 -1px 1px #ed2c07, 1px 0 1px #ed2c07, 0 1px 1px #ed2c07, -1px 0 1px #ed2c07;
+  text-shadow: 0 -1px 1px #ed2c07, 1px 0 1px #ed2c07, 0 1px 1px #ed2c07,
+    -1px 0 1px #ed2c07;
   box-shadow: 0 1px 0 #de2907;
 }
 body.login {
@@ -672,7 +674,8 @@ body.login {
   padding-top: 58px;
   opacity: 0;
   transform: translateY(-20%);
-  transition: opacity 0.3s ease-out, visibility 0.3s ease-out, transform 0.3s ease-out;
+  transition: opacity 0.3s ease-out, visibility 0.3s ease-out,
+    transform 0.3s ease-out;
   padding-bottom: 20px;
 }
 .site-header__menu--active {
@@ -1255,22 +1258,25 @@ body.admin-bar .search-overlay {
   margin-bottom: 1rem;
 }
 .generic-content h1 {
-  font-size: 3.6rem;
+  font-size: 3.6rem !important;
+  color: red;
 }
 .generic-content h2 {
-  font-size: 3.1rem;
+  font-size: 2.1rem !important;
+  color: blue;
 }
 .generic-content h3 {
-  font-size: 2.6rem;
+  font-size: 2.6rem !important;
+  color: #55acee;
 }
 .generic-content h4 {
-  font-size: 2.1rem;
+  font-size: 2.1rem !important;
 }
 .generic-content h5 {
-  font-size: 1.6rem;
+  font-size: 1.6rem !important;
 }
 .generic-content h6 {
-  font-size: 1.15rem;
+  font-size: 1.15rem !important;
 }
 @media (min-width: 530px) {
   .generic-content h1 {
@@ -1409,7 +1415,7 @@ body.admin-bar .search-overlay {
 }
 .page-links li a {
   display: block;
-  text-align: center;
+  text-align: left;
   padding: 17px 10px;
   text-decoration: none;
   color: #0d3b66;

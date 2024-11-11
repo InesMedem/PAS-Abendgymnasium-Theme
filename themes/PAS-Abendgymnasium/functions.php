@@ -6,6 +6,8 @@ function PAS_files()
     wp_enqueue_style('custom-google.fonts', '//fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i|Roboto:100,300,400,400i,700,700i');
     wp_enqueue_style('PAS-main-styles', get_theme_file_uri('/build/style-index.css'));
     wp_enqueue_style('PAS-extra-styles', get_theme_file_uri('/build/index.css'));
+    wp_enqueue_style('PAS-style.css', get_theme_file_uri('/style.css'));
+
 }
 
 add_action('wp_enqueue_scripts', 'PAS_files');
