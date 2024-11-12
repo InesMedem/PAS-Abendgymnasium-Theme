@@ -4,7 +4,18 @@ get_header(); ?>
 
 
 <div class="page-banner">
-  <div class="page-banner__bg-image" style="background-image: url(<?php echo get_theme_file_uri('images/library-hero.jpg') ?>)"></div>
+  <div class="page-banner__bg-image"
+  
+  style="background-image: url(<?php 
+        $thumbnail_url = get_the_post_thumbnail_url(null, 'header-crop'); 
+        if ($thumbnail_url) {
+            echo $thumbnail_url;
+        } else {
+            echo get_theme_file_uri('images/Friedrich-Ebert-Schule_Front.jpg');
+        }
+    ?>)">
+
+</div>
   <div class="page-banner__content container t-center c-white">
     <h1 class="headline headline--large">Abendschule für Berufstätige Charlottenburg-Wilmersdorf</h1>
     <h3 class="headline headline--small">Das reguläre Abitur und den schulischen Teil der Hochschulzugangsberechtigung kostenlos erwerben</h3>

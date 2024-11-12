@@ -8,7 +8,18 @@ while (have_posts()) {
 ?>
 
   <div class="page-banner">
-    <div class="page-banner__bg-image" style="background-image: url(<?php echo get_theme_file_uri('images/Friedrich-Ebert-Schule_Front.jpg') ?>)"></div>
+    <div class="page-banner__bg-image" 
+    
+    style="background-image: url(<?php 
+        $thumbnail_url = get_the_post_thumbnail_url(null, 'header-crop'); 
+        if ($thumbnail_url) {
+            echo $thumbnail_url;
+        } else {
+            echo get_theme_file_uri('images/Friedrich-Ebert-Schule_Front.jpg');
+        }
+    ?>)">
+    
+  </div>
     <div class="page-banner__content container container--narrow">
       <h1 class="page-banner__title"><?php the_title(); ?></h1>
       <div class="page-banner__intro">
