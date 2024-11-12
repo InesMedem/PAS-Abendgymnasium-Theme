@@ -33,9 +33,6 @@ function pageBanner($args = NULL) {
 
 <?php 
 }
-?>
-
-<?php 
 
 function PAS_files()
 {

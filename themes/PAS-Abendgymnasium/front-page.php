@@ -17,8 +17,8 @@ get_header(); ?>
 
 </div>
   <div class="page-banner__content container t-center c-white">
-    <h1 class="headline headline--large">Abendschule für Berufstätige Charlottenburg-Wilmersdorf</h1>
-    <h3 class="headline headline--small">Das reguläre Abitur und den schulischen Teil der Hochschulzugangsberechtigung kostenlos erwerben</h3>
+    <h1 class="headline headline--large"><?php the_title(); ?></h1>
+    <h3 class="headline headline--small"><?php the_excerpt(); ?></h3>
     <a href="#" class="btn btn--large btn--blue">Jetzt Anmelden</a>
   </div>
 </div>
@@ -30,7 +30,7 @@ get_header(); ?>
   </div>
 </div>
 
-<div class="full-width-split group">
+<!-- <div class="full-width-split group">
   <div class="full-width-split__one">
     <div class="full-width-split__inner">
       <h2 class="headline headline--small-plus t-center">Upcoming Events</h2>
@@ -87,9 +87,52 @@ get_header(); ?>
       <p class="t-center no-margin"><a href="#" class="btn btn--yellow">View All Blog Posts</a></p>
     </div>
   </div>
+</div> -->
+
+    <div class="container container--narrow page-section">
+      <h2 class="headline headline--small-plus t-center">Aktuelles</h2>
+
+      <?php
+  // Custom query to get only 5 posts
+  $args = array(
+    'posts_per_page' => 5, // Limit to 5 posts
+  );
+  $query = new WP_Query($args);
+
+  if ($query->have_posts()) :
+    while ($query->have_posts()) : $query->the_post();
+?>
+  <div class="event-summary">
+    <a class="event-summary__date t-center" href="<?php the_permalink(); ?>">
+      <span class="event-summary__month"><?php echo get_the_date('M'); ?></span>
+      <span class="event-summary__day"><?php echo get_the_date('d'); ?></span>
+    </a>
+    <div class="event-summary__content">
+      <h5 class="event-summary__title headline headline--tiny">
+        <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+      </h5>
+      <p>
+        <?php echo wp_trim_words(get_the_content(), 18); ?>
+        <a href="<?php the_permalink(); ?>" class="nu gray">Learn more</a>
+      </p>
+    </div>
+  </div>
+
+<?php 
+    endwhile; 
+  endif;
+
+  wp_reset_postdata(); 
+?>
+
+<p class="t-center no-margin">
+  <a href="<?php echo site_url('/aktuelles'); ?>" class="btn btn--blue">Aktuelles</a>
+</p>
+
 </div>
 
 <?php
 get_footer();
 
 ?>
+
