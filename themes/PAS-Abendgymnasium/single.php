@@ -15,7 +15,17 @@ while (have_posts()) {
   </div>
 
   <div class="container container--narrow page-section">
-    metsbox will go here
+  <div class="metabox metabox--position-up metabox--with-home-link">
+        <p>
+          <a class="metabox__blog-home-link" href="
+          <?php echo site_url('/aktuelles'); ?>
+          "><i class="fa fa-home" aria-hidden="true"></i> Blog Home <?php
+                                                                  
+                                                                  ?></a>
+          <span class="metabox__main">Posted By <?php the_author_posts_link(); ?> on <?php the_time('n/j/y'); ?> in <?php echo get_the_category_list(', '); ?>
+          </span>
+        </p>
+      </div>
 
     <div class="generic-content">
 

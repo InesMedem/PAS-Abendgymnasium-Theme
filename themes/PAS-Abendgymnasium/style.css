@@ -3,3 +3,111 @@ Theme name: PAS Abendgymnasium
 Author: Ines
 Version: 1.0
 */
+
+/* Contact Form */
+
+.form-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-color: #faf0ca;
+}
+
+.form-container p {
+  margin-bottom: 2%;
+  margin-top: 2%;
+  font-size: 16px !important;
+}
+
+.form-container h3 {
+  font-size: 20px !important;
+  font-weight: 800;
+}
+
+.form-container h5 {
+  font-size: 18px !important;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.form-block {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.form-column {
+}
+
+/* .wpcf7-textarea {
+  width: 100%;
+} */
+/* span.datenschutz span.wpcf7-list-item {
+  margin: 0;
+} */
+/* .wpcf7 button,
+.wpcf7 input,
+.wpcf7 textarea,
+.wpcf7 button:focus,
+.wpcf7 input:focus,
+.wpcf7 textarea:focus {
+  border: 1px solid #576c89;
+} */
+.wpcf7 input,
+.wpcf7 textarea,
+.wpcf7 button,
+.wpcf7 input[type="submit"],
+.wpcf7 input[type="button"],
+.wpcf7 input[type="reset"] {
+  transition: moz-box-shadow, -webkit-box-shadow, box-shadow 125ms ease-in-out;
+}
+/* .wpcf7 input:hover,
+.wpcf7 textarea:hover,
+.wpcf7 input:focus,
+.wpcf7 textarea:focus,
+.wpcf7 button:hover,
+.wpcf7 button:focus,
+.wpcf7 input[type="submit"]:hover,
+.wpcf7 input[type="button"]:hover,
+.wpcf7 input[type="reset"]:hover,
+.wpcf7 input[type="submit"]:focus,
+.wpcf7 input[type="button"]:focus,
+.wpcf7 input[type="reset"]:focus {
+  moz-box-shadow: 0px 0px 8px #bbbbbb;
+  -webkit-box-shadow: 0px 0px 8px #bbbbbb;
+  box-shadow: 0px 0px 8px #bbbbbb;
+}
+.wpcf7 button,
+.wpcf7 button,
+.wpcf7 input[type="submit"],
+.wpcf7 input[type="button"],
+.wpcf7 input[type="reset"],
+.wpcf7 input[type="submit"],
+.wpcf7 input[type="button"],
+.wpcf7 input[type="reset"] {
+  background: #576c89;
+  color: #fff;
+} */
+.mandatory {
+  color: #eb433e;
+}
+/* .columns2 {
+  column-count: 2;
+  column-gap: 2em;
+} */
+/* .fullWidth {
+  width: 100%;
+  width: 100vw;
+  position: relative;
+  margin-left: -50vw;
+  background-color: #eef0f3;
+  left: 50%;
+  padding: 1em 0;
+  margin-bottom: 1em;
+} */
+/* .fullWidthCenter {
+  text-align: center;
+} */
