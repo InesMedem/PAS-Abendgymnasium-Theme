@@ -12,7 +12,7 @@
   <header class="site-header">
     <div class="container">
       <h1 class="school-logo-text float-left">
-        <a href="#"><strong>Peter-A.</strong>-Silbermann-Schule</a>
+        <a href="<?php echo site_url('/') ?>"><strong>Peter-A.</strong>-Silbermann-Schule</a>
       </h1>
       <span class="js-search-trigger site-header__search-trigger"><i class="fa fa-search" aria-hidden="true"></i></span>
       <i class="site-header__menu-trigger fa fa-bars" aria-hidden="true"></i>
@@ -30,7 +30,7 @@
           </ul>
         </nav>
         <div class="site-header__util">
-          <a href="<?php echo site_url('/anmeldung')?>" class="btn btn--small btn--orange float-left push-right">Anmelden</a>
+          <a href="<?php echo site_url('/voraussetzungen-und-anmeldung')?>" class="btn btn--small btn--orange float-left push-right">Anmelden</a>
           <span class="search-trigger js-search-trigger"><i class="fa fa-search" aria-hidden="true"></i></span>
         </div>
       </div>
