@@ -4,29 +4,13 @@ get_header();
 
 while (have_posts()) {
   the_post();
+  pageBanner(array(
+    // 'title' => 'hello Title',
+    // 'photo' => 'https://static.vecteezy.com/vite/assets/photo-masthead-375-BoK_p8LG.webp',
+    // 'subtitle' => 'this is a subtitle'
+));
 
 ?>
-
-  <div class="page-banner">
-    <div class="page-banner__bg-image" 
-    
-    style="background-image: url(<?php 
-        $thumbnail_url = get_the_post_thumbnail_url(null, 'header-crop'); 
-        if ($thumbnail_url) {
-            echo $thumbnail_url;
-        } else {
-            echo get_theme_file_uri('images/Friedrich-Ebert-Schule_Front.jpg');
-        }
-    ?>)">
-    
-  </div>
-    <div class="page-banner__content container container--narrow">
-      <h1 class="page-banner__title"><?php the_title(); ?></h1>
-      <div class="page-banner__intro">
-        <p>DONT FORGET TO REPLACE ME LATER</p>
-      </div>
-    </div>
-  </div>
 
   <div class="container container--narrow page-section">
 
