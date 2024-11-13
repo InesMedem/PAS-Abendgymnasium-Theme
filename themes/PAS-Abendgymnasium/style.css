@@ -11,12 +11,25 @@ Version: 1.0
   flex-wrap: wrap;
   flex-direction: column;
   background-color: #faf0ca;
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.form-container div {
+  border: 1px solid red;
+  margin-bottom: 20px;
 }
 
 .form-container p {
-  margin-bottom: 2%;
-  margin-top: 2%;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 10px;
+  margin-top: 10px;
   font-size: 16px !important;
+}
+
+.form-container p i {
+  font-size: 14px !important;
 }
 
 .form-container h3 {
@@ -24,8 +37,16 @@ Version: 1.0
   font-weight: 800;
 }
 
+.form-container p,
+.form-container h5,
+.form-container h3 {
+  margin-top: 10px;
+}
+
 .form-container h5 {
   font-size: 18px !important;
+  font-weight: 800;
+  color: pink;
 }
 
 .form-row {
@@ -35,11 +56,21 @@ Version: 1.0
 }
 
 .form-block {
-  margin-bottom: 20px;
-  margin-top: 20px;
+  /* margin-bottom: 20px;
+  margin-top: 20px; */
 }
 
 .form-column {
+}
+
+/* .wpcf7-form-control-wrap, */
+/* .wpcf7-form-control, */
+.wpcf7-select,
+.wpcf7 input {
+  border-radius: 8px;
+  border: 0;
+  padding: 5px;
+  background-color: white;
 }
 
 /* .wpcf7-textarea {
