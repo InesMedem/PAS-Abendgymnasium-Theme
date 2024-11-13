@@ -32,7 +32,18 @@ while (have_posts()) {
     }
     ?>
 
+<?php
 
+// Check if the current page has any children
+$child_pages = get_pages(array(
+  'child_of' => get_the_ID(),
+  'post_type' => 'page'
+));
+
+
+if ( $child_pages OR $theParent ) {
+
+?>
     <div class="page-links">
       <h2 class="page-links__title"><a href="#"><?php echo get_the_title($theParent)?></a></h2>
       <ul class="min-list">
@@ -49,12 +60,14 @@ while (have_posts()) {
         'child_of' => $findChildrenOf,
         'depth' => 2
       ));
-     
-     
      ?>
       </ul>
     </div>
+<?php
 
+  }
+
+?>
     <div class="generic-content">
       <?php the_content();
       ?>
