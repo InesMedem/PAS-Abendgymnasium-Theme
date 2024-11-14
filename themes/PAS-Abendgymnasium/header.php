@@ -11,22 +11,27 @@
 
   <header class="site-header">
     <div class="site-header__container">
-      <h1 class="school-logo-text float-left">
-        <a href="<?php echo site_url('/') ?>"><strong>Peter-A.</strong>-Silbermann-Schule</a>
-      </h1>
+      <div class="site-header__logo">
+        <img src="<?php echo get_theme_file_uri("images/Peter-A.-Silbermann.png") ?>" /> <br>
+        <h1 class="school-logo-text float-left">
+          <a href="<?php echo site_url('/') ?>"><strong>Peter-A.</strong>-Silbermann-Schule</a>
+        </h1>
+      </div>
       <!-- <span class="js-search-trigger site-header__search-trigger"><i class="fa fa-search" aria-hidden="true"></i></span> -->
-      <i class="site-header__menu-trigger fa fa-bars" aria-hidden="true"></i>
-      <div class="site-header__menu group">
-        <nav class="main-navigation">
-          <ul>
-            <?php wp_nav_menu(array(
-              'theme_location' => 'headerMenuLocation'
-            )) ?>
-          </ul>
-        </nav>
-        <div class="site-header__util">
-          <a href="<?php echo site_url('/voraussetzungen-und-anmeldung')?>" class="btn btn--small btn--orange float-left push-right">Anmelden</a>
-          <!-- <span class="search-trigger js-search-trigger"><i class="fa fa-search" aria-hidden="true"></i></span> -->
+      <div class="site-header__nav">
+        <i class="site-header__menu-trigger fa fa-bars" aria-hidden="true"></i>
+        <div class="site-header__menu group">
+          <nav class="main-navigation">
+            <ul>
+              <?php wp_nav_menu(array(
+                'theme_location' => 'headerMenuLocation'
+              )) ?>
+            </ul>
+          </nav>
+          <div class="site-header__util">
+            <a href="<?php echo site_url('/voraussetzungen-und-anmeldung') ?>" class="btn btn--small btn--orange float-left push-right">Anmelden</a>
+            <!-- <span class="search-trigger js-search-trigger"><i class="fa fa-search" aria-hidden="true"></i></span> -->
+          </div>
         </div>
       </div>
     </div>
