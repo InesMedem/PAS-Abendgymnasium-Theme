@@ -10,11 +10,11 @@
 <body <?php body_class(); ?>>
 
   <header class="site-header">
-    <div class="container">
+    <div class="site-header__container">
       <h1 class="school-logo-text float-left">
         <a href="<?php echo site_url('/') ?>"><strong>Peter-A.</strong>-Silbermann-Schule</a>
       </h1>
-      <span class="js-search-trigger site-header__search-trigger"><i class="fa fa-search" aria-hidden="true"></i></span>
+      <!-- <span class="js-search-trigger site-header__search-trigger"><i class="fa fa-search" aria-hidden="true"></i></span> -->
       <i class="site-header__menu-trigger fa fa-bars" aria-hidden="true"></i>
       <div class="site-header__menu group">
         <nav class="main-navigation">
@@ -22,16 +22,11 @@
             <?php wp_nav_menu(array(
               'theme_location' => 'headerMenuLocation'
             )) ?>
-            <!-- <li><a href="#">About Us</a></li>
-              <li><a href="#">Programs</a></li>
-              <li><a href="#">Events</a></li>
-              <li><a href="#">Campuses</a></li>
-              <li><a href="#">Blog</a></li> -->
           </ul>
         </nav>
         <div class="site-header__util">
           <a href="<?php echo site_url('/voraussetzungen-und-anmeldung')?>" class="btn btn--small btn--orange float-left push-right">Anmelden</a>
-          <span class="search-trigger js-search-trigger"><i class="fa fa-search" aria-hidden="true"></i></span>
+          <!-- <span class="search-trigger js-search-trigger"><i class="fa fa-search" aria-hidden="true"></i></span> -->
         </div>
       </div>
     </div>

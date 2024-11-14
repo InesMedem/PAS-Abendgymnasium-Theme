@@ -550,16 +550,19 @@ li {
   right: 0;
   left: 0;
   padding: 20px 0;
+  display: flex;
+  background-color: beige;
+  max-width: 1300px;
+  margin: 0 auto;
+  justify-content: space-between;
 }
-.site-header__avatar {
-  position: absolute;
-  top: 0;
-  right: 0;
+.site-header__container {
+  display: flex;
+  background-color: blue;
+  max-width: 800px;
 }
-.site-header__avatar img {
-  display: block;
-  width: 30px;
-  height: 30px;
+.site-header__container h1 {
+  background-color: aqua;
 }
 .site-header__menu {
   visibility: hidden;
