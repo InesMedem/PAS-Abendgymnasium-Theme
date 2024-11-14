@@ -3,8 +3,8 @@
 get_header(); ?>
 
 
-<div class="page-banner">
-  <div class="page-banner__bg-image"
+<div class="page-banner overlay">
+  <div class="page-banner__bg-image "
   
   style="background-image: url(<?php 
         $thumbnail_url = get_the_post_thumbnail_url(null, 'header-crop'); 
