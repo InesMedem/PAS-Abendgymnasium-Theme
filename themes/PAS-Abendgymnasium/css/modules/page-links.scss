@@ -12,8 +12,8 @@
   &__title {
     margin: 0;
     font-weight: normal;
-    text-align: center;
-    padding: 20px 0;
+    text-align: left;
+    padding: 20px;
     background-color: $mainBlue;
     color: #fff;
 
@@ -42,7 +42,7 @@
 
   li a {
     display: block;
-    text-align: center;
+    text-align: left;
     padding: 17px 10px;
     text-decoration: none;
     color: $mainBlue;
