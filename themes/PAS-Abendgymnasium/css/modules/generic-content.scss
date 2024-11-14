@@ -16,7 +16,7 @@
   h4,
   h5,
   h6 {
-    font-family: "Roboto Condensed", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 300;
     margin-top: 0;
     margin-bottom: 1rem;
@@ -43,22 +43,32 @@
 
   @include atSmall {
     h1 {
-      font-size: 6.25rem;
+      // font-size: 6.25rem;
+      font-size: 5rem;
+      color: red;
     }
     h2 {
-      font-size: 5rem;
+      // font-size: 5rem;
+      font-size: 3.125rem;
+      color: blueviolet;
     }
     h3 {
-      font-size: 3.125rem;
+      // font-size: 3.125rem;
+      font-size: 2.4rem;
+      color: blue;
     }
     h4 {
-      font-size: 2.4rem;
+      // font-size: 2.4rem;
+      font-size: 1.9rem;
+      color: yellow;
     }
     h5 {
-      font-size: 1.9rem;
+      font-size: 1.6875rem;
+      color: brown;
     }
     h6 {
-      font-size: 1.15rem;
+      font-size: 1.5rem;
+      color: aqua;
     }
   }
 }

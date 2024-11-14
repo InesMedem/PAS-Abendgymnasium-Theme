@@ -1,31 +1,39 @@
 .headline {
   margin: 0;
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 300;
 
   &--large {
-    font-size: 3.6rem;
+    font-size: 3rem;
+    color: red;
     @include atSmall {
-      font-size: 6.25rem;
+      // font-size: 6.25rem;
+      font-size: 5rem;
+      font-weight: 400;
     }
   }
 
   &--large-medium {
-    font-size: 5rem;
+    color: blueviolet;
+    // font-size: 5rem;
+    font-size: 3.125rem;
     margin: 0 0 1rem 0;
   }
 
   &--medium {
     font-size: 1.9rem;
+    color: blue;
     margin-bottom: 0.75rem;
     @include atSmall {
-      font-size: 3.125rem;
+      // font-size: 3.125rem;
+      font-size: 2.4rem;
     }
   }
 
   &--small-plus {
     font-family: "Roboto", sans-serif;
     font-size: 1.6875rem;
+    color: yellow;
     font-weight: 400;
     margin-bottom: 1.9rem;
   }
