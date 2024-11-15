@@ -11,19 +11,20 @@
 
   <header class="site-header">
     <div class="site-header__container">
+   
       <div class="site-header__logo">
-        <img 
-        src="<?php echo get_theme_file_uri("images/Peter-A.-Silbermann.png") ?>"
-        style="width: 100px; height: auto;"
-        alt="Logo"  
-        /> 
+      <a href="<?php echo site_url('/') ?>"> <img 
+          src="<?php echo get_theme_file_uri("images/Peter-A.-Silbermann.png") ?>"
+          style="width: 80px; height: auto;"
+          alt="Logo" />  </a>
         <div class="site-header__logoText">
-        <h1 class="school-logo-text float-left">
-          <a href="<?php echo site_url('/') ?>"><span>Peter-A.</span>-Silbermann-Schule</a>
-        </h1>
-        <p>Staatliches Abendgymnasium für Berufstätige</p>
+          <h1 class="school-logo-text float-left">
+            <a href="<?php echo site_url('/') ?>"><strong>Peter-A.</strong>-Silbermann-Schule</a>
+          </h1>
+          <p>Staatliches Abendgymnasium für Berufstätige</p>
         </div>
       </div>
+     
       <!-- <span class="js-search-trigger site-header__search-trigger"><i class="fa fa-search" aria-hidden="true"></i></span> -->
       <div class="site-header__nav">
         <i class="site-header__menu-trigger fa fa-bars" aria-hidden="true"></i>
@@ -36,7 +37,7 @@
             </ul>
           </nav>
           <div class="site-header__util">
-            <a href="<?php echo site_url('/voraussetzungen-und-anmeldung') ?>" class="btn btn--medium btn--orange float-left push-right">ANMELDUNG</a>
+            <a href="<?php echo site_url('/voraussetzungen-und-anmeldung') ?>" class="btn btn--small btn--orange float-left push-right"><b>ANMELDUNG</b></a>
             <!-- <span class="search-trigger js-search-trigger"><i class="fa fa-search" aria-hidden="true"></i></span> -->
           </div>
         </div>

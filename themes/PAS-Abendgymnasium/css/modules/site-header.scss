@@ -7,9 +7,9 @@
   padding: 0;
   display: flex;
   // background-color: rgba(0, 0, 0, 0.532);
-  margin: 0 auto;
+  // margin: 0 auto;
   // justify-content: center;
-  margin-bottom: 100px;
+  // margin-bottom: 100px;
 
   &__container {
     display: flex;
@@ -17,36 +17,34 @@
     margin: 0 auto;
     width: 1300px;
     justify-content: space-between;
-    align-items: center;
+    // align-items: center;
   }
 
   &__logo {
     display: flex;
     align-items: center;
-    background-color: aqua;
+    // background-color: aqua;
+    margin-top: 10px;
+    justify-content: center;
   }
 
   &__logoText {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding-left: 10px;
+    margin-left: 10px;
   }
 
   &__logoText p {
     color: white;
-  }
-
-  &__logoText span {
-    font-weight: 900px;
-    color: red;
+    margin: 0;
+    font-weight: 300;
   }
 
   &__nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: blueviolet;
+    // background-color: blueviolet;
   }
 
   &__menu {

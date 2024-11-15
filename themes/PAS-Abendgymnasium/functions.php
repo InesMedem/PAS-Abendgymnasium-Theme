@@ -55,7 +55,7 @@ function PAS_features() {
     add_theme_support('title-tag');
     add_theme_support('post-thumbnails');
     add_post_type_support('page', 'excerpt');
-    add_image_size('header-crop', 1400, 400, true);
+    add_image_size('header-crop', 2000, 900, true);
 }
 
 add_action('after_setup_theme', 'PAS_features');

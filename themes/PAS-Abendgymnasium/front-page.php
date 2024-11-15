@@ -16,9 +16,9 @@ get_header(); ?>
     ?>)">
 
 </div>
-  <div class="page-banner__content container t-center c-white">
+  <div class="page-banner__content container t-center c-white container--hero">
     <h1 class="headline headline--large"><?php the_title(); ?></h1>
-    <h3 class="headline headline--small"><?php the_excerpt(); ?></h3>
+    <h3 class="headline headline--small container--narrow"><?php the_excerpt(); ?></h3>
     <a href="#" class="btn btn--large btn--blue">Jetzt Anmelden</a>
   </div>
 </div>
@@ -89,8 +89,6 @@ get_header(); ?>
 </div> -->
 
     <div class="container container--narrow page-section">
-      <h2 class="headline headline--small-plus t-center">Aktuelles</h2>
-
       <?php
   // Custom query to get only 5 posts
   $args = array(
