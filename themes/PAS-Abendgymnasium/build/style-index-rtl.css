@@ -866,13 +866,11 @@ li {
   }
 }
 .headline--large-medium {
-  color: blueviolet;
   font-size: 3.125rem;
   margin: 0 0 1rem 0;
 }
 .headline--medium {
   font-size: 1.9rem;
-  color: blue;
   margin-bottom: 0.75rem;
 }
 @media (min-width: 530px) {
@@ -883,7 +881,6 @@ li {
 .headline--small-plus {
   font-family: "Roboto", sans-serif;
   font-size: 1.6875rem;
-  color: yellow;
   font-weight: 400;
   margin-bottom: 1.9rem;
 }
