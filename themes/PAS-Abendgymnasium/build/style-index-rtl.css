@@ -953,27 +953,21 @@ li {
 @media (min-width: 530px) {
   .generic-content h1 {
     font-size: 5rem;
-    color: red;
   }
   .generic-content h2 {
     font-size: 3.125rem;
-    color: blueviolet;
   }
   .generic-content h3 {
     font-size: 2.4rem;
-    color: blue;
   }
   .generic-content h4 {
     font-size: 1.9rem;
-    color: yellow;
   }
   .generic-content h5 {
     font-size: 1.6875rem;
-    color: brown;
   }
   .generic-content h6 {
     font-size: 1.5rem;
-    color: aqua;
   }
 }
 
