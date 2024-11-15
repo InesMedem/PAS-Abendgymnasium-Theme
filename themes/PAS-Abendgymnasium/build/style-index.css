@@ -551,25 +551,39 @@ li {
   right: 0;
   padding: 0;
   display: flex;
-  background-color: beige;
-  max-width: 1300px;
   margin: 0 auto;
-  justify-content: center;
+  margin-bottom: 100px;
 }
 .site-header__container {
   display: flex;
-  background-color: blue;
   margin: 0 auto;
   width: 1300px;
   justify-content: space-between;
   align-items: center;
 }
-.site-header__container h1 {
-  background-color: aqua;
-}
 .site-header__logo {
   display: flex;
   align-items: center;
+  background-color: aqua;
+}
+.site-header__logoText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 10px;
+}
+.site-header__logoText p {
+  color: white;
+}
+.site-header__logoText span {
+  font-weight: 900px;
+  color: red;
+}
+.site-header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: blueviolet;
 }
 .site-header__menu {
   visibility: hidden;
@@ -768,10 +782,11 @@ li {
 
 .main-navigation a {
   display: block;
+  text-transform: uppercase;
   padding: 10px 20px;
   color: #fff;
   text-decoration: none;
-  font-weight: 300;
+  font-weight: 400;
 }
 @media (min-width: 960px) {
   .main-navigation a {
@@ -792,7 +807,7 @@ li {
 }
 @media (min-width: 530px) {
   .page-banner {
-    padding: 130px 0 60px 0;
+    padding: 160px 0 90px 0;
   }
 }
 .page-banner__content {
@@ -812,7 +827,7 @@ li {
   }
 }
 .page-banner__bg-image {
-  opacity: 0.33;
+  opacity: 0.53;
   background-size: cover;
   position: absolute;
   top: 0;
@@ -842,7 +857,6 @@ li {
 }
 .headline--large {
   font-size: 3rem;
-  color: red;
 }
 @media (min-width: 530px) {
   .headline--large {
@@ -995,6 +1009,49 @@ li {
   .full-width-split__inner {
     width: 610px;
   }
+}
+
+.event-summary {
+  position: relative;
+  padding-left: 107px;
+  min-height: 77px;
+  padding-bottom: 1px;
+  margin-bottom: 20px;
+}
+.event-summary__title a {
+  color: #173f58;
+}
+.event-summary__date {
+  text-decoration: none;
+  display: block;
+  top: 0;
+  left: 0;
+  position: absolute;
+  padding: 14px 0 11px 0;
+  color: #FFF;
+  border-radius: 50%;
+  background-color: #0d3b66;
+  width: 80px;
+  line-height: 1;
+  transition: opacity 0.33s;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.22);
+}
+.event-summary__date:hover {
+  opacity: 0.75;
+}
+.event-summary__date--beige {
+  background-color: #f4d35e;
+}
+.event-summary__month {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.event-summary__day {
+  display: block;
+  font-size: 2.02rem;
+  font-weight: 700;
 }
 
 .page-links {

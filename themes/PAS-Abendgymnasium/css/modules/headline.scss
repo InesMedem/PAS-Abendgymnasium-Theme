@@ -5,7 +5,6 @@
 
   &--large {
     font-size: 3rem;
-    color: red;
     @include atSmall {
       // font-size: 6.25rem;
       font-size: 5rem;

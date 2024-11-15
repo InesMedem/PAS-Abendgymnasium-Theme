@@ -33,10 +33,11 @@
 
 .main-navigation a {
   display: block;
+  text-transform: uppercase;
   padding: 10px 20px;
   color: #fff;
   text-decoration: none;
-  font-weight: 300;
+  font-weight: 400;
   @include atMedium {
     display: inline-block;
     padding: 0;

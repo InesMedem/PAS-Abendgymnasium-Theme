@@ -4,7 +4,7 @@ get_header(); ?>
 
 
 <div class="page-banner overlay">
-  <div class="page-banner__bg-image "
+  <div class="page-banner__bg-image"
   
   style="background-image: url(<?php 
         $thumbnail_url = get_the_post_thumbnail_url(null, 'header-crop'); 
@@ -25,7 +25,6 @@ get_header(); ?>
 
   <div class="container container--narrow page-section">
   <div class="generic-content">
-
     <?php the_content(); ?>
   </div>
 </div>
