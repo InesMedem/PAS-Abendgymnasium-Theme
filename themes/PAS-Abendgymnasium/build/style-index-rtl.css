@@ -1166,3 +1166,67 @@ li {
   border-bottom: none;
   margin-bottom: 0;
 }
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-color: #faf0ca;
+  padding: 20px;
+  border-radius: 8px;
+}
+.form__row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.form h3 {
+  margin-top: 20px;
+}
+
+.remove-margin {
+  margin-top: 0 !important;
+}
+
+.form p {
+  margin-right: 0;
+  margin-left: 0;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.form p i {
+  font-size: 14px;
+}
+
+.wpcf7 textarea,
+.wpcf7-select,
+.wpcf7 input {
+  border-radius: 8px;
+  border: 0;
+  padding: 5px;
+  background-color: white;
+}
+
+.mandatory {
+  color: #eb433e;
+}
+
+.wpcf7 input[type=submit] {
+  color: #ffffff;
+  font-weight: 500;
+  background: #173f58;
+  padding: 15px 25px 15px 25px;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.wpcf7 input:hover[type=submit] {
+  transition: all 2s;
+}
+
+.wpcf7 input:active[type=submit] {
+  background: #173f58;
+}
