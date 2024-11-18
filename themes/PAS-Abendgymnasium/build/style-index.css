@@ -482,6 +482,8 @@ li {
   padding: 12px 24px;
   border: none;
   outline: none;
+  transition: transform 0.3s ease;
+  cursor: pointer;
 }
 .btn--small {
   font-size: 0.88rem;
@@ -496,6 +498,7 @@ li {
   background-color: #ee964b;
 }
 .btn--orange:hover {
+  transform: scale(1.1);
   background: linear-gradient(#ee964b, rgb(234.75, 108.013803681, 0));
 }
 .btn--dark-orange {
@@ -508,6 +511,7 @@ li {
   background-color: #0d3b66;
 }
 .btn--blue:hover {
+  transform: scale(1.1);
   background: linear-gradient(rgb(17.9117391304, 81.2917391304, 140.5382608696), #0d3b66);
 }
 .btn--yellow {
@@ -515,6 +519,7 @@ li {
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.22);
 }
 .btn--yellow:hover {
+  transform: scale(1.1);
   background: linear-gradient(#f4d35e, rgb(239.98, 187.1844, 0));
 }
 .btn--beige {
@@ -522,6 +527,7 @@ li {
   color: #173f58;
 }
 .btn--beige:hover {
+  transform: scale(1.1);
   background-color: #f4d35e;
 }
 .btn--gray {
@@ -532,6 +538,7 @@ li {
   color: #173f58;
 }
 .btn--white:hover {
+  transform: scale(1.1);
   background-color: #ddd;
 }
 .btn--large {
