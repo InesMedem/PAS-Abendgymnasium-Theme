@@ -19,7 +19,7 @@ pageBanner(array(
         <?php
         the_excerpt();
         ?>
-        <p><a class="btn btn--blue" href="<?php the_permalink(); ?>">Continue Reading &raquo</a></p>
+        <p><a class="btn btn--blue" href="<?php the_permalink(); ?>"> Weiterlesen &raquo</a></p>
       </div>
     </div>
   <?php endwhile;
