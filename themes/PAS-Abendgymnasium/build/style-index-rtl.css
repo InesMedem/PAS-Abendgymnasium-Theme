@@ -263,7 +263,8 @@ li {
 
 .social-icons-list {
   display: flex;
-  margin: 0 -8px;
+  gap: 10px;
+  align-items: center;
 }
 
 .social-icons-list li {
@@ -273,6 +274,7 @@ li {
 
 .social-icons-list li a {
   display: block;
+  width: 40px;
   text-align: center;
   color: #fff;
   font-size: 1.25rem;
@@ -312,7 +314,6 @@ li {
 }
 
 .nav-list a {
-  font-size: 0.9rem;
   color: #999;
   text-decoration: none;
 }
