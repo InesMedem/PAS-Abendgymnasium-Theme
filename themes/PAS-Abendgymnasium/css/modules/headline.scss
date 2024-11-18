@@ -8,12 +8,13 @@
     @include atSmall {
       // font-size: 6.25rem;
       font-size: 5rem;
+      color: red;
       font-weight: 400;
     }
   }
 
   &--large-medium {
-    // color: blueviolet;
+    color: blueviolet !important;
     // font-size: 5rem;
     font-size: 3.125rem;
     margin: 0 0 1rem 0;
@@ -21,7 +22,7 @@
 
   &--medium {
     font-size: 1.9rem;
-    // color: blue;
+    color: blue !important;
     margin-bottom: 0.75rem;
     @include atSmall {
       // font-size: 3.125rem;
@@ -32,7 +33,7 @@
   &--small-plus {
     font-family: "Roboto", sans-serif;
     font-size: 1.6875rem;
-    // color: yellow;
+    color: yellow !important;
     font-weight: 400;
     margin-bottom: 1.9rem;
   }

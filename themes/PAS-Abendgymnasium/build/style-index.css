@@ -181,7 +181,6 @@ li {
 
 .school-logo-text {
   position: relative;
-  z-index: 20;
   margin: 0;
   font-size: 1.75rem;
   font-weight: 100;
@@ -844,15 +843,18 @@ li {
 @media (min-width: 530px) {
   .headline--large {
     font-size: 5rem;
+    color: red;
     font-weight: 400;
   }
 }
 .headline--large-medium {
+  color: blueviolet !important;
   font-size: 3.125rem;
   margin: 0 0 1rem 0;
 }
 .headline--medium {
   font-size: 1.9rem;
+  color: blue !important;
   margin-bottom: 0.75rem;
 }
 @media (min-width: 530px) {
@@ -863,6 +865,7 @@ li {
 .headline--small-plus {
   font-family: "Roboto", sans-serif;
   font-size: 1.6875rem;
+  color: yellow !important;
   font-weight: 400;
   margin-bottom: 1.9rem;
 }
@@ -912,22 +915,22 @@ li {
   margin-bottom: 1rem;
 }
 .generic-content h1 {
-  font-size: 3.6rem;
-}
-.generic-content h2 {
   font-size: 3.1rem;
 }
-.generic-content h3 {
+.generic-content h2 {
   font-size: 2.6rem;
 }
-.generic-content h4 {
+.generic-content h3 {
   font-size: 2.1rem;
 }
-.generic-content h5 {
+.generic-content h4 {
   font-size: 1.6rem;
 }
-.generic-content h6 {
+.generic-content h5 {
   font-size: 1.15rem;
+}
+.generic-content h6 {
+  font-size: 1rem;
 }
 @media (min-width: 530px) {
   .generic-content h1 {

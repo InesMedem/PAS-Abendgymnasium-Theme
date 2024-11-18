@@ -6,24 +6,17 @@
   right: 0;
   padding: 0;
   display: flex;
-  // background-color: rgba(0, 0, 0, 0.532);
-  // margin: 0 auto;
-  // justify-content: center;
-  // margin-bottom: 100px;
 
   &__container {
     display: flex;
-    // background-color: blue;
     margin: 0 auto;
     width: 1300px;
     justify-content: space-between;
-    // align-items: center;
   }
 
   &__logo {
     display: flex;
     align-items: center;
-    // background-color: aqua;
     margin-top: 10px;
     justify-content: center;
   }
