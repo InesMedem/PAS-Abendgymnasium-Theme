@@ -685,75 +685,48 @@ li {
 }
 
 .site-footer {
-  padding: 2rem 0 3.5rem 0;
-  background-image: linear-gradient(#fff, #ececec);
+  background-image: linear-gradient(#fff, rgba(236, 236, 236, 0.9019607843));
 }
-.site-footer p {
-  font-size: 0.9rem;
+.site-footer__flex-container {
+  display: flex;
+  flex-wrap: wrap;
 }
-.site-footer .headline {
-  color: #666;
-  margin-bottom: 0.33rem;
+.site-footer h3 {
+  margin-bottom: 10px;
 }
-.site-footer__link {
-  color: #999;
-  text-decoration: none;
+.site-footer__icon {
+  display: flex;
+  margin-bottom: 15px;
 }
-.site-footer__link:hover {
-  color: #0d3b66;
-  text-decoration: underline;
+.site-footer__icon p {
+  margin: 0;
 }
-.site-footer__inner {
-  border-top: 1px dotted #dedede;
-  padding-top: 3.5rem;
+.site-footer__icon a {
+  font-size: 16px;
 }
-.site-footer__col-one {
-  text-align: center;
+.site-footer__icon img {
+  margin-right: 10px;
 }
-@media (min-width: 960px) {
-  .site-footer__col-one {
-    text-align: left;
-    width: 33%;
-    float: left;
-  }
+.site-footer__col-one, .site-footer__col-two, .site-footer__col-three, .site-footer__col-four {
+  width: 24%;
+  margin-left: 1%;
+  flex-wrap: wrap;
+  min-width: 200px;
 }
-.site-footer__col-two-three-group {
-  text-align: center;
-  width: 85%;
-  margin: 0 auto;
+.site-footer__buttom-container {
+  align-items: center;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  justify-content: center;
+  background-color: #0d3b66;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  font-size: 14px;
+  margin-top: 20px;
 }
-@media (min-width: 960px) {
-  .site-footer__col-two-three-group {
-    text-align: left;
-    float: left;
-    width: 42%;
-    margin: 0;
-  }
-}
-.site-footer__col-two {
-  width: 50%;
-  float: left;
-}
-.site-footer__col-three {
-  width: 50%;
-  float: left;
-}
-.site-footer__col-four {
-  padding-top: 20px;
-  width: 85%;
-  margin: 0 auto;
-  clear: both;
-  text-align: center;
-}
-@media (min-width: 960px) {
-  .site-footer__col-four {
-    padding-top: 0;
-    margin: 0;
-    clear: none;
-    text-align: left;
-    width: 25%;
-    float: right;
-  }
+.site-footer__buttom-container p {
+  margin: 0;
 }
 
 .main-navigation {

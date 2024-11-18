@@ -1,5 +1,7 @@
 <?php
 
+//******************************* Page Banner
+
 function pageBanner($args = NULL) {
     // Set default title if none is provided in $args
     if (empty($args['title'])) {
@@ -34,6 +36,8 @@ function pageBanner($args = NULL) {
 <?php 
 }
 
+//******************************* 
+
 function PAS_files()
 {
     wp_enqueue_script('main-university-js', get_theme_file_uri('/build/index.js'), array('jquery'), '1.0', true);
@@ -48,7 +52,6 @@ function PAS_files()
 
 add_action('wp_enqueue_scripts', 'PAS_files');
 
-
 function PAS_features() {
     register_nav_menu('headerMenuLocation', 'Header Menu Location');
     register_nav_menu('footerMenuLocation', 'Footer Menu Location');
@@ -59,3 +62,14 @@ function PAS_features() {
 }
 
 add_action('after_setup_theme', 'PAS_features');
+
+
+//******************************* SVG Support
+
+function allow_svg_upload( $mimes ) {
+    $mimes['svg'] = 'image/svg+xml';
+    return $mimes;
+}
+
+add_filter( 'upload_mimes', 'allow_svg_upload' );
+
