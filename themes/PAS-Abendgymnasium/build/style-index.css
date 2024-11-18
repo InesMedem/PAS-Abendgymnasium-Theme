@@ -843,7 +843,6 @@ li {
 @media (min-width: 530px) {
   .headline--large {
     font-size: 5rem;
-    color: red;
     font-weight: 400;
   }
 }
