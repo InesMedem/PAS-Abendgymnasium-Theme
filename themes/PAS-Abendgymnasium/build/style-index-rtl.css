@@ -835,6 +835,7 @@ li {
   bottom: 0;
   right: 0;
   left: 0;
+  background-attachment: fixed;
 }
 .page-banner__intro {
   font-weight: 300;

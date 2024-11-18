@@ -15,10 +15,10 @@ while (have_posts()) {
         <p>
           <a class="metabox__blog-home-link" href="
           <?php echo site_url('/aktuelles'); ?>
-          "><i class="fa fa-home" aria-hidden="true"></i> Blog Home <?php
+          "><i class="fa fa-home" aria-hidden="true"></i> Blog-Startseite <?php
                                                                   
                                                                   ?></a>
-          <span class="metabox__main">Posted By <?php the_author_posts_link(); ?> on <?php the_time('n/j/y'); ?> in <?php echo get_the_category_list(', '); ?>
+          <span class="metabox__main">Veröffentlicht von <?php the_author_posts_link(); ?> am <?php the_time('n/j/y'); ?> in <?php echo get_the_category_list(', '); ?>
           </span>
         </p>
       </div>

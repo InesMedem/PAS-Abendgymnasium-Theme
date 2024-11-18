@@ -8,7 +8,7 @@ while (have_posts()) {
     // 'title' => 'hello Title',
     // 'photo' => 'https://static.vecteezy.com/vite/assets/photo-masthead-375-BoK_p8LG.webp',
     // 'subtitle' => 'this is a subtitle'
-));
+  ));
 
 ?>
 
@@ -22,9 +22,9 @@ while (have_posts()) {
         <p>
           <a class="metabox__blog-home-link" href="
           <?php echo get_the_permalink($theParent); ?>
-          "><i class="fa fa-home" aria-hidden="true"></i> Back to <?php
-                                                                  echo get_the_title($theParent);
-                                                                  ?></a>
+          "><i class="fa fa-home" aria-hidden="true"></i> Zurück zu <?php
+                                                                    echo get_the_title($theParent);
+                                                                    ?></a>
           <span class="metabox__main"><?php the_title(); ?></span>
         </p>
       </div>
@@ -32,42 +32,41 @@ while (have_posts()) {
     }
     ?>
 
-<?php
+    <?php
 
-// Check if the current page has any children
-$child_pages = get_pages(array(
-  'child_of' => get_the_ID(),
-  'post_type' => 'page'
-));
+    // Check if the current page has any children
+    $child_pages = get_pages(array(
+      'child_of' => get_the_ID(),
+      'post_type' => 'page'
+    ));
 
 
-if ( $child_pages OR $theParent ) {
+    if ($child_pages or $theParent) {
 
-?>
-    <div class="page-links">
-      <h2 class="page-links__title"><a href="#"><?php echo get_the_title($theParent)?></a></h2>
-      <ul class="min-list">
-        <?php
+    ?>
+      <div class="page-links">
+        <h2 class="page-links__title"><a href="#"><?php echo get_the_title($theParent) ?></a></h2>
+        <ul class="min-list">
+          <?php
 
-    if ($theParent) {
-      $findChildrenOf = $theParent;
+          if ($theParent) {
+            $findChildrenOf = $theParent;
+          } else {
+            $findChildrenOf = get_the_ID();
+          }
+          wp_list_pages(array(
+            'title_li' => NULL,
+            'child_of' => $findChildrenOf,
+            'depth' => 2
+          ));
+          ?>
+        </ul>
+      </div>
+    <?php
+
     }
-    else {
-      $findChildrenOf = get_the_ID();
-    }
-     wp_list_pages(array(
-        'title_li' => NULL,
-        'child_of' => $findChildrenOf,
-        'depth' => 2
-      ));
-     ?>
-      </ul>
-    </div>
-<?php
 
-  }
-
-?>
+    ?>
     <div class="generic-content">
       <?php the_content();
       ?>
