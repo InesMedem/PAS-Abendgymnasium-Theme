@@ -1,0 +1,36 @@
+.contact {
+  // background-color: $beigeBg;
+  // background-image: url("<?php echo get_template_directory_uri(); ?> /images/apples.jpg");
+
+  &__details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    &-item {
+      flex: 1 1 300px;
+    }
+  }
+
+  &__map {
+    iframe {
+      border-radius: 8px;
+      border: none;
+      width: 100%;
+      height: 250px;
+    }
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact__details {
+    flex-direction: column;
+    align-items: center;
+
+    &-item {
+      flex: 1 1 100%;
+    }
+  }
+}

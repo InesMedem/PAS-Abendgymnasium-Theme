@@ -1,5 +1,7 @@
 <?php
 
+
+
 //******************************* Page Banner
 
 function pageBanner($args = NULL) {
@@ -57,19 +59,20 @@ function PAS_features() {
     register_nav_menu('footerMenuLocation', 'Footer Menu Location');
     add_theme_support('title-tag');
     add_theme_support('post-thumbnails');
+    add_theme_support('align-wide');
+    add_theme_support('editor-styles');
     add_post_type_support('page', 'excerpt');
     add_image_size('header-crop', 2000, 900, true);
 }
 
 add_action('after_setup_theme', 'PAS_features');
 
-
 //******************************* SVG Support
 
-function allow_svg_upload( $mimes ) {
-    $mimes['svg'] = 'image/svg+xml';
-    return $mimes;
-}
+// function allow_svg_upload( $mimes ) {
+//     $mimes['svg'] = 'image/svg+xml';
+//     return $mimes;
+// }
 
-add_filter( 'upload_mimes', 'allow_svg_upload' );
+// add_filter( 'upload_mimes', 'allow_svg_upload' );
 
