@@ -17,6 +17,8 @@
     font-size: 3.6rem;
     margin: 0;
     color: #fff;
+    overflow-wrap: break-word;
+
     @include atSmall {
       font-size: 5rem;
     }

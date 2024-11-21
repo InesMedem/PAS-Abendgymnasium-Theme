@@ -13,8 +13,10 @@
     flex-wrap: wrap;
   }
 
-  & h3 {
+  & h4 {
     margin-top: 20px;
+    overflow-wrap: break-word;
+    font-weight: 400;
   }
 }
 
@@ -57,10 +59,35 @@
 }
 
 .wpcf7 input:hover[type="submit"] {
-  //   background: #0a9e1c;
   transition: all 2s;
 }
 
 .wpcf7 input:active[type="submit"] {
   background: #173f58;
+}
+
+@media (max-width: 456px) {
+  .form-block {
+    max-width: 300px; /* Reduced max-width for smaller screens */
+    padding-bottom: 15px;
+  }
+  .wpcf7 input[type="text"],
+  .wpcf7 input[type="email"],
+  .wpcf7 input[type="tel"],
+  .wpcf7 input[type="file"],
+  .wpcf7 input[type="date"],
+  .wpcf7 textarea {
+    max-width: 280px;
+    width: 100%;
+  }
+
+  .wpcf7-form-control.wpcf7-select {
+    // margin-bottom: 7px;
+    max-width: 280px;
+    width: 100%;
+  }
+
+  .remove-margin {
+    margin-top: 15px !important;
+  }
 }

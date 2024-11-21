@@ -1,58 +1,51 @@
 .site-footer {
-  background-image: linear-gradient(#fff, #ececece6);
+  // background-image: linear-gradient(#fff, #ececece6);
+  background-color: $mainBlue;
 
-  &__flex-container {
+  &__flex-container--row {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0 20px 0;
   }
 
-  & h3 {
-    margin-bottom: 10px;
+  &__nav-list ul {
+    display: flex; /* Make the list items horizontal */
+    list-style-type: none; /* Optional: Remove default bullet points */
+    margin: 0;
+    padding: 0;
   }
 
-  &__icon-list {
+  &__nav-list ul li {
+    margin-right: 20px; /* Add spacing between menu items */
   }
 
-  &__icon {
-    display: flex;
-    margin-bottom: 15px;
+  &__nav-list a {
+    color: white;
   }
 
-  &__icon p {
+  &__nav-list ul li:last-child {
+    margin-right: 0; /* Remove extra margin on the last item */
+  }
+
+  &__buttom-container p {
     margin: 0;
   }
 
-  &__icon a {
-    font-size: 16px;
-  }
-
-  &__icon img {
-    margin-right: 10px;
-  }
-
-  &__col-one,
-  &__col-two,
-  &__col-three,
-  &__col-four {
-    width: 24%;
-    margin-left: 1%;
-    flex-wrap: wrap;
-    min-width: 200px;
+  &__ section {
+    background-color: aqua;
   }
 
   &__buttom-container {
-    align-items: center;
-    padding-bottom: 5px;
-    padding-top: 5px;
-    justify-content: center;
+    // align-items: center;
+    // padding-bottom: 5px;
+    // padding-top: 5px;
+    // justify-content: center;
     background-color: $mainBlue;
-    color: white;
-    display: flex;
-    justify-content: space-around;
-    font-size: 14px;
-    margin-top: 20px;
-  }
-  &__buttom-container p {
-    margin: 0;
+    // color: white;
+    // display: flex;
+    // justify-content: space-around;
+    // font-size: 14px;
+    // margin-top: 20px;
   }
 }

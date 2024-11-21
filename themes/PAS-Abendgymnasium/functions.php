@@ -1,6 +1,10 @@
 <?php
 
-
+add_filter('wpcf7_form_elements', function($content) {
+    // Replace "Select option" with your desired text
+    $content = str_replace('Please choose an option', 'Bitte wählen', $content);
+    return $content;
+});
 
 //******************************* Page Banner
 

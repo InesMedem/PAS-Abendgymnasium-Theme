@@ -689,48 +689,37 @@ li {
 }
 
 .site-footer {
-  background-image: linear-gradient(#fff, rgba(236, 236, 236, 0.9019607843));
-}
-.site-footer__flex-container {
-  display: flex;
-  flex-wrap: wrap;
-}
-.site-footer h3 {
-  margin-bottom: 10px;
-}
-.site-footer__icon {
-  display: flex;
-  margin-bottom: 15px;
-}
-.site-footer__icon p {
-  margin: 0;
-}
-.site-footer__icon a {
-  font-size: 16px;
-}
-.site-footer__icon img {
-  margin-left: 10px;
-}
-.site-footer__col-one, .site-footer__col-two, .site-footer__col-three, .site-footer__col-four {
-  width: 24%;
-  margin-right: 1%;
-  flex-wrap: wrap;
-  min-width: 200px;
-}
-.site-footer__buttom-container {
-  align-items: center;
-  padding-bottom: 5px;
-  padding-top: 5px;
-  justify-content: center;
   background-color: #0d3b66;
-  color: white;
+}
+.site-footer__flex-container--row {
   display: flex;
-  justify-content: space-around;
-  font-size: 14px;
-  margin-top: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px 0 20px 0;
+}
+.site-footer__nav-list ul {
+  display: flex; /* Make the list items horizontal */
+  list-style-type: none; /* Optional: Remove default bullet points */
+  margin: 0;
+  padding: 0;
+}
+.site-footer__nav-list ul li {
+  margin-left: 20px; /* Add spacing between menu items */
+}
+.site-footer__nav-list a {
+  color: white;
+}
+.site-footer__nav-list ul li:last-child {
+  margin-left: 0; /* Remove extra margin on the last item */
 }
 .site-footer__buttom-container p {
   margin: 0;
+}
+.site-footer__ section {
+  background-color: aqua;
+}
+.site-footer__buttom-container {
+  background-color: #0d3b66;
 }
 
 .main-navigation {
@@ -805,6 +794,7 @@ li {
   font-size: 3.6rem;
   margin: 0;
   color: #fff;
+  overflow-wrap: break-word;
 }
 @media (min-width: 530px) {
   .page-banner__title {
@@ -840,6 +830,7 @@ li {
   margin: 0;
   font-family: "Poppins", sans-serif;
   font-weight: 300;
+  overflow-wrap: break-word;
 }
 .headline--large {
   font-size: 3rem;
@@ -915,6 +906,7 @@ li {
   font-weight: 300;
   margin-top: 0;
   margin-bottom: 1rem;
+  overflow-wrap: break-word;
 }
 .generic-content h1 {
   font-size: 3.1rem;
@@ -1168,8 +1160,10 @@ li {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.form h3 {
+.form h4 {
   margin-top: 20px;
+  overflow-wrap: break-word;
+  font-weight: 400;
 }
 
 .remove-margin {
@@ -1218,20 +1212,43 @@ li {
   background: #173f58;
 }
 
+@media (max-width: 456px) {
+  .form-block {
+    max-width: 300px; /* Reduced max-width for smaller screens */
+    padding-bottom: 15px;
+  }
+  .wpcf7 input[type=text],
+  .wpcf7 input[type=email],
+  .wpcf7 input[type=tel],
+  .wpcf7 input[type=file],
+  .wpcf7 input[type=date],
+  .wpcf7 textarea {
+    max-width: 280px;
+    width: 100%;
+  }
+  .wpcf7-form-control.wpcf7-select {
+    max-width: 280px;
+    width: 100%;
+  }
+  .remove-margin {
+    margin-top: 15px !important;
+  }
+}
 .contact__details {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  background-color: #fffaf2;
 }
-.contact__details-item {
-  flex: 1 1 300px;
-}
-.contact__map iframe {
-  border-radius: 8px;
-  border: none;
+.contact__img {
+  background-image: url(images/Peter-A.-Silbermann-Schule-Architektur.59c8c6be.jpg);
+  background-size: cover; /* Ensures the image covers the container */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent tiling */
+  height: 300px;
   width: 100%;
-  height: 250px;
 }
 
 /* Responsive Design */
