@@ -34,6 +34,21 @@ li {
   line-height: 1.65;
 }
 
+@media (max-width: 456px) {
+  .stack {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  border-radius: 8px;
+}
+
 .container {
   max-width: 1300px;
   margin: 0 auto;
@@ -1149,7 +1164,6 @@ li {
 .form {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
   background-color: #faf0ca;
   padding: 20px;
   border-radius: 8px;

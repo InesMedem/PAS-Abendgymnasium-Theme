@@ -1,3 +1,19 @@
+@media (max-width: 456px) {
+  .stack {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  border-radius: 8px;
+}
+
 .container {
   max-width: 1300px;
   margin: 0 auto;

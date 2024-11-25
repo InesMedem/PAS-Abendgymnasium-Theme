@@ -108,7 +108,7 @@ get_header(); ?>
       </nav>
 
       <div class="contact__img">
-      <!-- <img> -->
+      <img>
       </div>
 
     </div>
