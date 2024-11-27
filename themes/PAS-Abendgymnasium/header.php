@@ -16,13 +16,13 @@
         <a href="<?php echo site_url('/') ?>"> <img
             src="<?php echo get_theme_file_uri("images/Peter-A.-Silbermann.png") ?>"
             style="width: 80px; height: auto;"
-            alt="Logo" /> </a>
+            alt="Logo" /> 
         <div class="site-header__logoText">
-          <h1 class="school-logo-text float-left">
-            <a href="<?php echo site_url('/') ?>"><strong>Peter-A.</strong>-Silbermann-Schule</a>
-          </h1>
+          <h3 class="headline headline--small-plus float-left">
+            <strong>Peter-A.</strong>-Silbermann-Schule
+          </h3>
           <p>Staatliches Abendgymnasium für Berufstätige</p>
-        </div>
+        </div></a>
       </div>
 
       <!-- <span class="js-search-trigger site-header__search-trigger"><i class="fa fa-search" aria-hidden="true"></i></span> -->

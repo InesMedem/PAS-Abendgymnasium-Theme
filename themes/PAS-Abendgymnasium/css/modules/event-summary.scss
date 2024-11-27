@@ -11,6 +11,12 @@
 
   &__title a {
     color: #173f58;
+    text-decoration: none;
+    font-weight: 400;
+  }
+
+  &__title a:hover {
+    text-decoration: underline;
   }
 
   &__date {
@@ -31,6 +37,7 @@
 
   &__date:hover {
     opacity: 0.75;
+    text-decoration: none;
   }
 
   &__date--beige {

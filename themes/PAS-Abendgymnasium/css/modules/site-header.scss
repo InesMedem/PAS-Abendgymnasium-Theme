@@ -7,6 +7,16 @@
   padding: 0;
   display: flex;
 
+  & a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
+
+  & img {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.146);
+  }
+
   &__container {
     display: flex;
     margin: 0 auto;
@@ -16,6 +26,7 @@
 
   &__logo {
     display: flex;
+    flex-direction: row;
     align-items: center;
     margin-top: 10px;
     justify-content: center;
@@ -37,7 +48,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    // background-color: blueviolet;
   }
 
   &__menu {
@@ -131,29 +141,3 @@
     margin-right: 0;
   }
 }
-
-// .school-logo-text {
-//   position: relative;
-//   z-index: 20;
-//   margin: 0;
-//   font-size: 1.75rem;
-//   font-weight: 100;
-// }
-
-// .school-logo-text strong {
-//   font-weight: 500;
-// }
-
-// .school-logo-text a {
-//   color: #fff;
-//   text-decoration: none;
-// }
-
-// .school-logo-text--alt-color a {
-//   color: #666;
-
-//   &:hover {
-//     color: $mainBlue;
-//     text-decoration: underline;
-//   }
-// }

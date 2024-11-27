@@ -8,6 +8,7 @@
   padding: 12px 24px;
   transition: transform 0.3s ease;
   cursor: pointer;
+  border: #333 1px solid;
 
   &--orange {
     background: linear-gradient(215deg, $lightOrange, #ef752a);

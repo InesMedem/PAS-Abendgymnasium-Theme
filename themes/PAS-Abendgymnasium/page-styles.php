@@ -5,6 +5,8 @@ get_header(); ?>
 <div class="container container--narrow page-section">
 
   <div>
+
+
     <h1>HEADLINE</h1>
     <h1 class="headline headline--large">
       This is a Large Headline
@@ -34,9 +36,6 @@ get_header(); ?>
       This is Tiny Text (with "Roboto" font)
     </p>
 
-
-
-
     <h1>
       This is a h1
     </h1>
@@ -65,7 +64,6 @@ get_header(); ?>
       This is paragraph
     </p>
 
-
     <p class="has-x-large-font-size"> Has X-large font size </p>
     <p class="has-large-font-size"> Has large font size </p>
     <p class="has-medium-font-size"> Has medium font size </p>
@@ -81,8 +79,6 @@ get_header(); ?>
     <a href="#" class="btn btn--blue">Blue Button</a>
 
   </div>
-
-
 
 
 </div>
