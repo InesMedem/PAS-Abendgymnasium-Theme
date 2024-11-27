@@ -1,98 +1,36 @@
 .btn {
   display: inline-block;
-  cursor: pointer;
-  border-radius: 8px;
+  border-radius: 4px;
   overflow: hidden;
   text-decoration: none;
   color: #fff;
   font-size: 1.19rem;
   padding: 12px 24px;
-  border: none;
-  outline: none;
   transition: transform 0.3s ease;
-  // cursor: pointer;
-
-  &--small {
-    font-size: 0.88rem;
-    padding: 7px 13px;
-    font-weight: 300;
-  }
-
-  &--with-photo {
-    padding-left: 40px;
-    position: relative;
-  }
+  cursor: pointer;
 
   &--orange {
-    background-color: $lightOrange;
+    background: linear-gradient(215deg, $lightOrange, #ef752a);
   }
 
   &--orange:hover {
     transform: scale(1.1);
-    background: linear-gradient(
-      $lightOrange,
-      scale-color($lightOrange, $lightness: -25%, $saturation: 100%)
-    );
-  }
-
-  &--dark-orange {
-    background-color: $darkOrange;
-  }
-
-  &--dark-orange:hover {
-    background: linear-gradient(
-      $darkOrange,
-      scale-color($darkOrange, $lightness: -35%, $saturation: 100%)
-    );
+    background-color: white;
+    background: white;
+    color: $lightOrange;
+    border: 1px $lightOrange solid;
   }
 
   &--blue {
+    // background: linear-gradient(215deg, #4d79a0, $mainBlue);
     background-color: $mainBlue;
   }
 
   &--blue:hover {
     transform: scale(1.1);
-    background: linear-gradient(
-      scale-color($mainBlue, $lightness: 11%),
-      $mainBlue
-    );
-  }
-
-  &--yellow {
-    background-color: $mainYellow;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.22);
-  }
-
-  &--yellow:hover {
-    transform: scale(1.1);
-    background: linear-gradient(
-      $mainYellow,
-      scale-color($mainYellow, $lightness: -29%, $saturation: 100%)
-    );
-  }
-
-  &--beige {
-    background-color: $beige;
-    color: #173f58;
-  }
-
-  &--beige:hover {
-    transform: scale(1.1);
-    background-color: $mainYellow;
-  }
-
-  &--gray {
-    background-color: #222;
-  }
-
-  &--white {
-    background-color: #fff;
-    color: #173f58;
-  }
-
-  &--white:hover {
-    transform: scale(1.1);
-    background-color: #ddd;
+    background-color: white;
+    color: $mainBlue;
+    border: 1px $mainBlue solid;
   }
 
   &--large {
@@ -104,9 +42,19 @@
     }
   }
 
+  &--small {
+    font-size: 0.88rem;
+    padding: 7px 13px;
+    font-weight: 300;
+  }
+
   &--inactive {
     background-color: transparent;
     cursor: default;
     color: #333;
   }
+}
+
+.btn:hover {
+  text-decoration: none;
 }

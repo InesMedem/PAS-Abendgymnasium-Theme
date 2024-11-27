@@ -1,68 +1,159 @@
 .headline {
   margin: 0;
-  font-family: "Poppins", sans-serif;
+  // font-family: "Poppins", sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-weight: 300;
-  overflow-wrap: break-word;
+  // overflow-wrap: break-word;
+
+  p {
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+  }
 
   &--large {
-    font-size: 3rem;
-    @include atSmall {
-      // font-size: 6.25rem;
-      font-size: 5rem;
-      // color: red;
-      font-weight: 400;
-    }
+    color: red !important;
+    margin: 0px;
+
+    font-size: clamp(
+      2.5rem,
+      5vw,
+      5rem
+    ); // Fluid font size between 2.5rem and 5rem, based on 5% of viewport width
   }
 
   &--large-medium {
     color: blueviolet !important;
-    // font-size: 5rem;
-    font-size: 3.125rem;
-    margin: 0 0 1rem 0;
+    font-size: clamp(
+      2rem,
+      4vw,
+      3.5rem
+    ); // Fluid font size between 2rem and 3.5rem
+    // margin: 0 0 1rem 0;
   }
 
   &--medium {
-    font-size: 1.9rem;
+    font-size: clamp(
+      1.6rem,
+      3vw,
+      2.3rem
+    ); // Fluid font size between 1.6rem and 2.3rem
     color: blue !important;
-    margin-bottom: 0.75rem;
-    @include atSmall {
-      // font-size: 3.125rem;
-      font-size: 2.4rem;
-    }
+    // margin-bottom: 0.75rem;
   }
 
   &--small-plus {
     font-family: "Roboto", sans-serif;
-    font-size: 1.6875rem;
-    color: yellow !important;
+    font-size: clamp(
+      1.4rem,
+      2.5vw,
+      1.8rem
+    ); // Fluid font size between 1.4rem and 1.8rem
     font-weight: 400;
-    margin-bottom: 1.9rem;
+    // margin-bottom: 1.9rem;
   }
 
   &--small {
-    font-size: 1.2rem;
-    // margin-bottom: 1.9rem;
-    @include atSmall {
-      font-size: 1.6875rem;
-    }
+    color: yellow !important;
+
+    font-size: clamp(
+      1rem,
+      2vw,
+      1.4rem
+    ); // Fluid font size between 1rem and 1.4rem
   }
 
-  &--smaller {
-    font-size: 1.5rem;
-  }
+  // &--smaller {
+  //   color: yellow !important;
+
+  //   font-size: clamp(
+  //     1.2rem,
+  //     1.5vw,
+  //     1.5rem
+  //   ); // Fluid font size between 1.2rem and 1.5rem
+  // }
 
   &--tiny {
-    font-family: "Roboto", sans-serif;
-    font-size: 1.3875rem;
-    margin-bottom: 0.25rem;
+    color: yellow !important;
+
+    // font-family: "Roboto", sans-serif;
+    font-size: clamp(
+      1rem,
+      2vw,
+      1.25rem
+    ); // Fluid font size between 1rem and 1.25rem
+    // margin-bottom: 0.25rem;
   }
 
   &--post-title a {
-    color: $mainBlue;
-    text-decoration: none;
+    // color: $mainBlue;
+    // text-decoration: none;
   }
 
-  &--post-title a:hover {
-    text-decoration: underline;
-  }
+  // &--post-title a:hover {
+  //   // text-decoration: underline;
+  // }
 }
+
+// .headline {
+//   margin: 0;
+//   font-family: "Poppins", sans-serif;
+//   font-weight: 300;
+//   overflow-wrap: break-word;
+
+//   &--large {
+//     font-size: 3rem;
+//     @include atSmall {
+//       font-size: 5rem;
+//       color: red;
+//       font-weight: 400;
+//     }
+//   }
+
+//   &--large-medium {
+//     color: blueviolet !important;
+//     font-size: 3.125rem;
+//     margin: 0 0 1rem 0;
+//   }
+
+//   &--medium {
+//     font-size: 1.9rem;
+//     color: blue !important;
+//     margin-bottom: 0.75rem;
+//     @include atSmall {
+//       font-size: 2.4rem;
+//     }
+//   }
+
+//   &--small-plus {
+//     font-family: "Roboto", sans-serif;
+//     font-size: 1.6875rem;
+//     color: yellow !important;
+//     font-weight: 400;
+//     margin-bottom: 1.9rem;
+//   }
+
+//   &--small {
+//     font-size: 1.2rem;
+//     // margin-bottom: 1.9rem;
+//     @include atSmall {
+//       font-size: 1.6875rem;
+//     }
+//   }
+
+//   &--smaller {
+//     font-size: 1.5rem;
+//   }
+
+//   &--tiny {
+//     font-family: "Roboto", sans-serif;
+//     font-size: 1.3875rem;
+//     margin-bottom: 0.25rem;
+//   }
+
+//   &--post-title a {
+//     color: $mainBlue;
+//     // text-decoration: none;
+//   }
+
+// }

@@ -1,5 +1,25 @@
 /******/ (() => { // webpackBootstrap
+/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
+
+/***/ "./src/index.js":
+/*!**********************!*\
+  !*** ./src/index.js ***!
+  \**********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _css_style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../css/style.scss */ "./css/style.scss");
+/* harmony import */ var _modules_MobileMenu__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/MobileMenu */ "./src/modules/MobileMenu.js");
+
+
+// Our modules / classes
+
+
+// Instantiate a new object using our modules/classes
+const mobileMenu = new _modules_MobileMenu__WEBPACK_IMPORTED_MODULE_1__["default"]();
+
+/***/ }),
 
 /***/ "./src/modules/MobileMenu.js":
 /*!***********************************!*\
@@ -7,7 +27,6 @@
   \***********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -35,9 +54,11 @@ class MobileMenu {
 /*!************************!*\
   !*** ./css/style.scss ***!
   \************************/
-/***/ (() => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-throw new Error("Module build failed (from ./node_modules/mini-css-extract-plugin/dist/loader.js):\nHookWebpackError: Module build failed (from ./node_modules/sass-loader/dist/cjs.js):\nSassError: There is no module with the namespace \"color\".\n   ╷\n46 │     background-color: color.scale($mainBlue, $alpha: -0.11, $lightness: -1%);\n   │                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n   ╵\n  css/modules/site-header.scss 46:23  @import\n  css/style.scss 13:9                 root stylesheet\n    at tryRunOrWebpackError (/Users/ines/Local Sites/pas-abendgymnasium/app/public/wp-content/themes/PAS-Abendgymnasium/node_modules/webpack/lib/HookWebpackError.js:86:9)\n    at __webpack_require_module__ (/Users/ines/Local Sites/pas-abendgymnasium/app/public/wp-content/themes/PAS-Abendgymnasium/node_modules/webpack/lib/Compilation.js:5299:12)\n    at __webpack_require__ (/Users/ines/Local Sites/pas-abendgymnasium/app/public/wp-content/themes/PAS-Abendgymnasium/node_modules/webpack/lib/Compilation.js:5256:18)\n    at /Users/ines/Local Sites/pas-abendgymnasium/app/public/wp-content/themes/PAS-Abendgymnasium/node_modules/webpack/lib/Compilation.js:5328:20\n    at symbolIterator (/Users/ines/Local Sites/pas-abendgymnasium/app/public/wp-content/themes/PAS-Abendgymnasium/node_modules/neo-async/async.js:3485:9)\n    at done (/Users/ines/Local Sites/pas-abendgymnasium/app/public/wp-content/themes/PAS-Abendgymnasium/node_modules/neo-async/async.js:3527:9)\n    at Hook.eval [as callAsync] (eval at create (/Users/ines/Local Sites/pas-abendgymnasium/app/public/wp-content/themes/PAS-Abendgymnasium/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:15:1)\n    at Hook.CALL_ASYNC_DELEGATE [as _callAsync] (/Users/ines/Local Sites/pas-abendgymnasium/app/public/wp-content/themes/PAS-Abendgymnasium/node_modules/tapable/lib/Hook.js:18:14)\n    at /Users/ines/Local Sites/pas-abendgymnasium/app/public/wp-content/themes/PAS-Abendgymnasium/node_modules/webpack/lib/Compilation.js:5234:43\n    at symbolIterator (/Users/ines/Local Sites/pas-abendgymnasium/app/public/wp-content/themes/PAS-Abendgymnasium/node_modules/neo-async/async.js:3482:9)\n    at timesSync (/Users/ines/Local Sites/pas-abendgymnasium/app/public/wp-content/themes/PAS-Abendgymnasium/node_modules/neo-async/async.js:2297:7)\n    at Object.eachLimit (/Users/ines/Local Sites/pas-abendgymnasium/app/public/wp-content/themes/PAS-Abendgymnasium/node_modules/neo-async/async.js:3463:5)\n    at /Users/ines/Local Sites/pas-abendgymnasium/app/public/wp-content/themes/PAS-Abendgymnasium/node_modules/webpack/lib/Compilation.js:5196:16\n    at symbolIterator (/Users/ines/Local Sites/pas-abendgymnasium/app/public/wp-content/themes/PAS-Abendgymnasium/node_modules/neo-async/async.js:3485:9)\n    at timesSync (/Users/ines/Local Sites/pas-abendgymnasium/app/public/wp-content/themes/PAS-Abendgymnasium/node_modules/neo-async/async.js:2297:7)\n    at Object.eachLimit (/Users/ines/Local Sites/pas-abendgymnasium/app/public/wp-content/themes/PAS-Abendgymnasium/node_modules/neo-async/async.js:3463:5)\n    at /Users/ines/Local Sites/pas-abendgymnasium/app/public/wp-content/themes/PAS-Abendgymnasium/node_modules/webpack/lib/Compilation.js:5164:15\n    at symbolIterator (/Users/ines/Local Sites/pas-abendgymnasium/app/public/wp-content/themes/PAS-Abendgymnasium/node_modules/neo-async/async.js:3485:9)\n    at done (/Users/ines/Local Sites/pas-abendgymnasium/app/public/wp-content/themes/PAS-Abendgymnasium/node_modules/neo-async/async.js:3527:9)\n    at /Users/ines/Local Sites/pas-abendgymnasium/app/public/wp-content/themes/PAS-Abendgymnasium/node_modules/webpack/lib/Compilation.js:5110:8\n    at /Users/ines/Local Sites/pas-abendgymnasium/app/public/wp-content/themes/PAS-Abendgymnasium/node_modules/webpack/lib/Compilation.js:3531:6\n    at /Users/ines/Local Sites/pas-abendgymnasium/app/public/wp-content/themes/PAS-Abendgymnasium/node_modules/webpack/lib/HookWebpackError.js:67:2\n    at Hook.eval [as callAsync] (eval at create (/Users/ines/Local Sites/pas-abendgymnasium/app/public/wp-content/themes/PAS-Abendgymnasium/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:15:1)\n    at Cache.store (/Users/ines/Local Sites/pas-abendgymnasium/app/public/wp-content/themes/PAS-Abendgymnasium/node_modules/webpack/lib/Cache.js:111:20)\n    at ItemCacheFacade.store (/Users/ines/Local Sites/pas-abendgymnasium/app/public/wp-content/themes/PAS-Abendgymnasium/node_modules/webpack/lib/CacheFacade.js:141:15)\n    at /Users/ines/Local Sites/pas-abendgymnasium/app/public/wp-content/themes/PAS-Abendgymnasium/node_modules/webpack/lib/Compilation.js:3530:11\n    at /Users/ines/Local Sites/pas-abendgymnasium/app/public/wp-content/themes/PAS-Abendgymnasium/node_modules/webpack/lib/Cache.js:97:5\n    at Hook.eval [as callAsync] (eval at create (/Users/ines/Local Sites/pas-abendgymnasium/app/public/wp-content/themes/PAS-Abendgymnasium/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:16:1)\n    at Cache.get (/Users/ines/Local Sites/pas-abendgymnasium/app/public/wp-content/themes/PAS-Abendgymnasium/node_modules/webpack/lib/Cache.js:79:18)\n    at ItemCacheFacade.get (/Users/ines/Local Sites/pas-abendgymnasium/app/public/wp-content/themes/PAS-Abendgymnasium/node_modules/webpack/lib/CacheFacade.js:115:15)\n    at Compilation._codeGenerationModule (/Users/ines/Local Sites/pas-abendgymnasium/app/public/wp-content/themes/PAS-Abendgymnasium/node_modules/webpack/lib/Compilation.js:3498:9)\n    at codeGen (/Users/ines/Local Sites/pas-abendgymnasium/app/public/wp-content/themes/PAS-Abendgymnasium/node_modules/webpack/lib/Compilation.js:5098:11)\n    at symbolIterator (/Users/ines/Local Sites/pas-abendgymnasium/app/public/wp-content/themes/PAS-Abendgymnasium/node_modules/neo-async/async.js:3482:9)\n    at timesSync (/Users/ines/Local Sites/pas-abendgymnasium/app/public/wp-content/themes/PAS-Abendgymnasium/node_modules/neo-async/async.js:2297:7)\n    at Object.eachLimit (/Users/ines/Local Sites/pas-abendgymnasium/app/public/wp-content/themes/PAS-Abendgymnasium/node_modules/neo-async/async.js:3463:5)\n    at /Users/ines/Local Sites/pas-abendgymnasium/app/public/wp-content/themes/PAS-Abendgymnasium/node_modules/webpack/lib/Compilation.js:5128:14\n    at processQueue (/Users/ines/Local Sites/pas-abendgymnasium/app/public/wp-content/themes/PAS-Abendgymnasium/node_modules/webpack/lib/util/processAsyncTree.js:61:4)\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)\n-- inner error --\nError: Module build failed (from ./node_modules/sass-loader/dist/cjs.js):\nSassError: There is no module with the namespace \"color\".\n   ╷\n46 │     background-color: color.scale($mainBlue, $alpha: -0.11, $lightness: -1%);\n   │                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n   ╵\n  css/modules/site-header.scss 46:23  @import\n  css/style.scss 13:9                 root stylesheet\n    at Object.<anonymous> (/Users/ines/Local Sites/pas-abendgymnasium/app/public/wp-content/themes/PAS-Abendgymnasium/node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!/Users/ines/Local Sites/pas-abendgymnasium/app/public/wp-content/themes/PAS-Abendgymnasium/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!/Users/ines/Local Sites/pas-abendgymnasium/app/public/wp-content/themes/PAS-Abendgymnasium/node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!/Users/ines/Local Sites/pas-abendgymnasium/app/public/wp-content/themes/PAS-Abendgymnasium/css/style.scss:1:7)\n    at /Users/ines/Local Sites/pas-abendgymnasium/app/public/wp-content/themes/PAS-Abendgymnasium/node_modules/webpack/lib/javascript/JavascriptModulesPlugin.js:494:10\n    at Hook.eval [as call] (eval at create (/Users/ines/Local Sites/pas-abendgymnasium/app/public/wp-content/themes/PAS-Abendgymnasium/node_modules/tapable/lib/HookCodeFactory.js:19:10), <anonymous>:7:1)\n    at Hook.CALL_DELEGATE [as _call] (/Users/ines/Local Sites/pas-abendgymnasium/app/public/wp-content/themes/PAS-Abendgymnasium/node_modules/tapable/lib/Hook.js:14:14)\n    at /Users/ines/Local Sites/pas-abendgymnasium/app/public/wp-content/themes/PAS-Abendgymnasium/node_modules/webpack/lib/Compilation.js:5301:39\n    at tryRunOrWebpackError (/Users/ines/Local Sites/pas-abendgymnasium/app/public/wp-content/themes/PAS-Abendgymnasium/node_modules/webpack/lib/HookWebpackError.js:81:7)\n    at __webpack_require_module__ (/Users/ines/Local Sites/pas-abendgymnasium/app/public/wp-content/themes/PAS-Abendgymnasium/node_modules/webpack/lib/Compilation.js:5299:12)\n    at __webpack_require__ (/Users/ines/Local Sites/pas-abendgymnasium/app/public/wp-content/themes/PAS-Abendgymnasium/node_modules/webpack/lib/Compilation.js:5256:18)\n    at /Users/ines/Local Sites/pas-abendgymnasium/app/public/wp-content/themes/PAS-Abendgymnasium/node_modules/webpack/lib/Compilation.js:5328:20\n    at symbolIterator (/Users/ines/Local Sites/pas-abendgymnasium/app/public/wp-content/themes/PAS-Abendgymnasium/node_modules/neo-async/async.js:3485:9)\n    at done (/Users/ines/Local Sites/pas-abendgymnasium/app/public/wp-content/themes/PAS-Abendgymnasium/node_modules/neo-async/async.js:3527:9)\n    at Hook.eval [as callAsync] (eval at create (/Users/ines/Local Sites/pas-abendgymnasium/app/public/wp-content/themes/PAS-Abendgymnasium/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:15:1)\n    at Hook.CALL_ASYNC_DELEGATE [as _callAsync] (/Users/ines/Local Sites/pas-abendgymnasium/app/public/wp-content/themes/PAS-Abendgymnasium/node_modules/tapable/lib/Hook.js:18:14)\n    at /Users/ines/Local Sites/pas-abendgymnasium/app/public/wp-content/themes/PAS-Abendgymnasium/node_modules/webpack/lib/Compilation.js:5234:43\n    at symbolIterator (/Users/ines/Local Sites/pas-abendgymnasium/app/public/wp-content/themes/PAS-Abendgymnasium/node_modules/neo-async/async.js:3482:9)\n    at timesSync (/Users/ines/Local Sites/pas-abendgymnasium/app/public/wp-content/themes/PAS-Abendgymnasium/node_modules/neo-async/async.js:2297:7)\n    at Object.eachLimit (/Users/ines/Local Sites/pas-abendgymnasium/app/public/wp-content/themes/PAS-Abendgymnasium/node_modules/neo-async/async.js:3463:5)\n    at /Users/ines/Local Sites/pas-abendgymnasium/app/public/wp-content/themes/PAS-Abendgymnasium/node_modules/webpack/lib/Compilation.js:5196:16\n    at symbolIterator (/Users/ines/Local Sites/pas-abendgymnasium/app/public/wp-content/themes/PAS-Abendgymnasium/node_modules/neo-async/async.js:3485:9)\n    at timesSync (/Users/ines/Local Sites/pas-abendgymnasium/app/public/wp-content/themes/PAS-Abendgymnasium/node_modules/neo-async/async.js:2297:7)\n    at Object.eachLimit (/Users/ines/Local Sites/pas-abendgymnasium/app/public/wp-content/themes/PAS-Abendgymnasium/node_modules/neo-async/async.js:3463:5)\n    at /Users/ines/Local Sites/pas-abendgymnasium/app/public/wp-content/themes/PAS-Abendgymnasium/node_modules/webpack/lib/Compilation.js:5164:15\n    at symbolIterator (/Users/ines/Local Sites/pas-abendgymnasium/app/public/wp-content/themes/PAS-Abendgymnasium/node_modules/neo-async/async.js:3485:9)\n    at done (/Users/ines/Local Sites/pas-abendgymnasium/app/public/wp-content/themes/PAS-Abendgymnasium/node_modules/neo-async/async.js:3527:9)\n    at /Users/ines/Local Sites/pas-abendgymnasium/app/public/wp-content/themes/PAS-Abendgymnasium/node_modules/webpack/lib/Compilation.js:5110:8\n    at /Users/ines/Local Sites/pas-abendgymnasium/app/public/wp-content/themes/PAS-Abendgymnasium/node_modules/webpack/lib/Compilation.js:3531:6\n    at /Users/ines/Local Sites/pas-abendgymnasium/app/public/wp-content/themes/PAS-Abendgymnasium/node_modules/webpack/lib/HookWebpackError.js:67:2\n    at Hook.eval [as callAsync] (eval at create (/Users/ines/Local Sites/pas-abendgymnasium/app/public/wp-content/themes/PAS-Abendgymnasium/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:15:1)\n    at Cache.store (/Users/ines/Local Sites/pas-abendgymnasium/app/public/wp-content/themes/PAS-Abendgymnasium/node_modules/webpack/lib/Cache.js:111:20)\n    at ItemCacheFacade.store (/Users/ines/Local Sites/pas-abendgymnasium/app/public/wp-content/themes/PAS-Abendgymnasium/node_modules/webpack/lib/CacheFacade.js:141:15)\n    at /Users/ines/Local Sites/pas-abendgymnasium/app/public/wp-content/themes/PAS-Abendgymnasium/node_modules/webpack/lib/Compilation.js:3530:11\n    at /Users/ines/Local Sites/pas-abendgymnasium/app/public/wp-content/themes/PAS-Abendgymnasium/node_modules/webpack/lib/Cache.js:97:5\n    at Hook.eval [as callAsync] (eval at create (/Users/ines/Local Sites/pas-abendgymnasium/app/public/wp-content/themes/PAS-Abendgymnasium/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:16:1)\n    at Cache.get (/Users/ines/Local Sites/pas-abendgymnasium/app/public/wp-content/themes/PAS-Abendgymnasium/node_modules/webpack/lib/Cache.js:79:18)\n    at ItemCacheFacade.get (/Users/ines/Local Sites/pas-abendgymnasium/app/public/wp-content/themes/PAS-Abendgymnasium/node_modules/webpack/lib/CacheFacade.js:115:15)\n    at Compilation._codeGenerationModule (/Users/ines/Local Sites/pas-abendgymnasium/app/public/wp-content/themes/PAS-Abendgymnasium/node_modules/webpack/lib/Compilation.js:3498:9)\n    at codeGen (/Users/ines/Local Sites/pas-abendgymnasium/app/public/wp-content/themes/PAS-Abendgymnasium/node_modules/webpack/lib/Compilation.js:5098:11)\n    at symbolIterator (/Users/ines/Local Sites/pas-abendgymnasium/app/public/wp-content/themes/PAS-Abendgymnasium/node_modules/neo-async/async.js:3482:9)\n    at timesSync (/Users/ines/Local Sites/pas-abendgymnasium/app/public/wp-content/themes/PAS-Abendgymnasium/node_modules/neo-async/async.js:2297:7)\n    at Object.eachLimit (/Users/ines/Local Sites/pas-abendgymnasium/app/public/wp-content/themes/PAS-Abendgymnasium/node_modules/neo-async/async.js:3463:5)\n    at /Users/ines/Local Sites/pas-abendgymnasium/app/public/wp-content/themes/PAS-Abendgymnasium/node_modules/webpack/lib/Compilation.js:5128:14\n    at processQueue (/Users/ines/Local Sites/pas-abendgymnasium/app/public/wp-content/themes/PAS-Abendgymnasium/node_modules/webpack/lib/util/processAsyncTree.js:61:4)\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)\n\nGenerated code for /Users/ines/Local Sites/pas-abendgymnasium/app/public/wp-content/themes/PAS-Abendgymnasium/node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!/Users/ines/Local Sites/pas-abendgymnasium/app/public/wp-content/themes/PAS-Abendgymnasium/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!/Users/ines/Local Sites/pas-abendgymnasium/app/public/wp-content/themes/PAS-Abendgymnasium/node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!/Users/ines/Local Sites/pas-abendgymnasium/app/public/wp-content/themes/PAS-Abendgymnasium/css/style.scss\n1 | throw new Error(\"Module build failed (from ./node_modules/sass-loader/dist/cjs.js):\\nSassError: There is no module with the namespace \\\"color\\\".\\n   ╷\\n46 │     background-color: color.scale($mainBlue, $alpha: -0.11, $lightness: -1%);\\n   │                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\n   ╵\\n  css/modules/site-header.scss 46:23  @import\\n  css/style.scss 13:9                 root stylesheet\");");
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
 
 /***/ })
 
@@ -67,7 +88,44 @@ throw new Error("Module build failed (from ./node_modules/mini-css-extract-plugi
 /******/ 		return module.exports;
 /******/ 	}
 /******/ 	
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = __webpack_modules__;
+/******/ 	
 /************************************************************************/
+/******/ 	/* webpack/runtime/chunk loaded */
+/******/ 	(() => {
+/******/ 		var deferred = [];
+/******/ 		__webpack_require__.O = (result, chunkIds, fn, priority) => {
+/******/ 			if(chunkIds) {
+/******/ 				priority = priority || 0;
+/******/ 				for(var i = deferred.length; i > 0 && deferred[i - 1][2] > priority; i--) deferred[i] = deferred[i - 1];
+/******/ 				deferred[i] = [chunkIds, fn, priority];
+/******/ 				return;
+/******/ 			}
+/******/ 			var notFulfilled = Infinity;
+/******/ 			for (var i = 0; i < deferred.length; i++) {
+/******/ 				var chunkIds = deferred[i][0];
+/******/ 				var fn = deferred[i][1];
+/******/ 				var priority = deferred[i][2];
+/******/ 				var fulfilled = true;
+/******/ 				for (var j = 0; j < chunkIds.length; j++) {
+/******/ 					if ((priority & 1 === 0 || notFulfilled >= priority) && Object.keys(__webpack_require__.O).every((key) => (__webpack_require__.O[key](chunkIds[j])))) {
+/******/ 						chunkIds.splice(j--, 1);
+/******/ 					} else {
+/******/ 						fulfilled = false;
+/******/ 						if(priority < notFulfilled) notFulfilled = priority;
+/******/ 					}
+/******/ 				}
+/******/ 				if(fulfilled) {
+/******/ 					deferred.splice(i--, 1)
+/******/ 					var r = fn();
+/******/ 					if (r !== undefined) result = r;
+/******/ 				}
+/******/ 			}
+/******/ 			return result;
+/******/ 		};
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	(() => {
 /******/ 		// define getter functions for harmony exports
@@ -96,26 +154,70 @@ throw new Error("Module build failed (from ./node_modules/mini-css-extract-plugi
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/jsonp chunk loading */
+/******/ 	(() => {
+/******/ 		// no baseURI
+/******/ 		
+/******/ 		// object to store loaded and loading chunks
+/******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
+/******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
+/******/ 		var installedChunks = {
+/******/ 			"index": 0,
+/******/ 			"./style-index": 0
+/******/ 		};
+/******/ 		
+/******/ 		// no chunk on demand loading
+/******/ 		
+/******/ 		// no prefetching
+/******/ 		
+/******/ 		// no preloaded
+/******/ 		
+/******/ 		// no HMR
+/******/ 		
+/******/ 		// no HMR manifest
+/******/ 		
+/******/ 		__webpack_require__.O.j = (chunkId) => (installedChunks[chunkId] === 0);
+/******/ 		
+/******/ 		// install a JSONP callback for chunk loading
+/******/ 		var webpackJsonpCallback = (parentChunkLoadingFunction, data) => {
+/******/ 			var chunkIds = data[0];
+/******/ 			var moreModules = data[1];
+/******/ 			var runtime = data[2];
+/******/ 			// add "moreModules" to the modules object,
+/******/ 			// then flag all "chunkIds" as loaded and fire callback
+/******/ 			var moduleId, chunkId, i = 0;
+/******/ 			if(chunkIds.some((id) => (installedChunks[id] !== 0))) {
+/******/ 				for(moduleId in moreModules) {
+/******/ 					if(__webpack_require__.o(moreModules, moduleId)) {
+/******/ 						__webpack_require__.m[moduleId] = moreModules[moduleId];
+/******/ 					}
+/******/ 				}
+/******/ 				if(runtime) var result = runtime(__webpack_require__);
+/******/ 			}
+/******/ 			if(parentChunkLoadingFunction) parentChunkLoadingFunction(data);
+/******/ 			for(;i < chunkIds.length; i++) {
+/******/ 				chunkId = chunkIds[i];
+/******/ 				if(__webpack_require__.o(installedChunks, chunkId) && installedChunks[chunkId]) {
+/******/ 					installedChunks[chunkId][0]();
+/******/ 				}
+/******/ 				installedChunks[chunkId] = 0;
+/******/ 			}
+/******/ 			return __webpack_require__.O(result);
+/******/ 		}
+/******/ 		
+/******/ 		var chunkLoadingGlobal = self["webpackChunkfictional_university_theme"] = self["webpackChunkfictional_university_theme"] || [];
+/******/ 		chunkLoadingGlobal.forEach(webpackJsonpCallback.bind(null, 0));
+/******/ 		chunkLoadingGlobal.push = webpackJsonpCallback.bind(null, chunkLoadingGlobal.push.bind(chunkLoadingGlobal));
+/******/ 	})();
+/******/ 	
 /************************************************************************/
-var __webpack_exports__ = {};
-// This entry needs to be wrapped in an IIFE because it needs to be in strict mode.
-(() => {
-"use strict";
-/*!**********************!*\
-  !*** ./src/index.js ***!
-  \**********************/
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _css_style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../css/style.scss */ "./css/style.scss");
-/* harmony import */ var _modules_MobileMenu__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/MobileMenu */ "./src/modules/MobileMenu.js");
-
-
-// Our modules / classes
-
-
-// Instantiate a new object using our modules/classes
-const mobileMenu = new _modules_MobileMenu__WEBPACK_IMPORTED_MODULE_1__["default"]();
-})();
-
+/******/ 	
+/******/ 	// startup
+/******/ 	// Load entry module and return exports
+/******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["./style-index"], () => (__webpack_require__("./src/index.js")))
+/******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
+/******/ 	
 /******/ })()
 ;
 //# sourceMappingURL=index.js.map

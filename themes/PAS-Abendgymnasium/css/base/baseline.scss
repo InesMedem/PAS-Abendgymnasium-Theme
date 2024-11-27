@@ -18,6 +18,7 @@
 
 body {
   color: #333;
+  // font-family: "Poppins", sans-serif;
   font-family: "Roboto", sans-serif;
   overflow-x: hidden;
   position: relative;
@@ -30,19 +31,21 @@ img {
 
 a {
   color: $mainBlue;
+  text-decoration: none;
 }
 
 a:hover {
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 p,
 ul,
 ol {
-  margin: 0 0 1.65em 0;
+  // margin: 0 0 1.65em 0;
 }
 
 p,
 li {
   line-height: 1.65;
+  // font-size: 1.15rem;
 }

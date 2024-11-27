@@ -17,7 +17,7 @@
   }
 
   &__nav-list ul li {
-    margin-right: 20px; /* Add spacing between menu items */
+    margin-right: 20px;
   }
 
   &__nav-list a {
@@ -26,14 +26,6 @@
 
   &__nav-list ul li:last-child {
     margin-right: 0; /* Remove extra margin on the last item */
-  }
-
-  &__buttom-container p {
-    margin: 0;
-  }
-
-  &__ section {
-    background-color: aqua;
   }
 
   &__buttom-container {

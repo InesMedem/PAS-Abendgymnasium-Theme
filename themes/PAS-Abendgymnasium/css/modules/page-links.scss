@@ -25,7 +25,7 @@
   }
 
   li {
-    border-top: 1px solid color.scale($beige, $lightness: -14%);
+    // border-top: 1px solid color.scale($beige, $lightness: -14%);
   }
 
   li:first-child {
@@ -50,7 +50,7 @@
   }
 
   li a:hover {
-    color: color.scale($mainBlue, $lightness: -6%);
+    // color: color.scale($mainBlue, $lightness: -6%);
     background-color: scale-color($beige, $lightness: -9%, $saturation: -12%);
   }
 }

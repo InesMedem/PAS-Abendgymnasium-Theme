@@ -11,12 +11,12 @@
 
   <header class="site-header">
     <div class="site-header__container">
-   
+
       <div class="site-header__logo">
-      <a href="<?php echo site_url('/') ?>"> <img 
-          src="<?php echo get_theme_file_uri("images/Peter-A.-Silbermann.png") ?>"
-          style="width: 80px; height: auto;"
-          alt="Logo" />  </a>
+        <a href="<?php echo site_url('/') ?>"> <img
+            src="<?php echo get_theme_file_uri("images/Peter-A.-Silbermann.png") ?>"
+            style="width: 80px; height: auto;"
+            alt="Logo" /> </a>
         <div class="site-header__logoText">
           <h1 class="school-logo-text float-left">
             <a href="<?php echo site_url('/') ?>"><strong>Peter-A.</strong>-Silbermann-Schule</a>
@@ -24,7 +24,7 @@
           <p>Staatliches Abendgymnasium für Berufstätige</p>
         </div>
       </div>
-     
+
       <!-- <span class="js-search-trigger site-header__search-trigger"><i class="fa fa-search" aria-hidden="true"></i></span> -->
       <div class="site-header__nav">
         <i class="site-header__menu-trigger fa fa-bars" aria-hidden="true"></i>

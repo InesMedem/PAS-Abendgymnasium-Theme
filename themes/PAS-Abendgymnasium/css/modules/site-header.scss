@@ -43,7 +43,6 @@
   &__menu {
     visibility: hidden;
     position: absolute;
-    background-color: color.scale($mainBlue, $alpha: -0.11, $lightness: -1%);
     left: 0;
     right: 0;
     top: -20px;
@@ -132,3 +131,29 @@
     margin-right: 0;
   }
 }
+
+// .school-logo-text {
+//   position: relative;
+//   z-index: 20;
+//   margin: 0;
+//   font-size: 1.75rem;
+//   font-weight: 100;
+// }
+
+// .school-logo-text strong {
+//   font-weight: 500;
+// }
+
+// .school-logo-text a {
+//   color: #fff;
+//   text-decoration: none;
+// }
+
+// .school-logo-text--alt-color a {
+//   color: #666;
+
+//   &:hover {
+//     color: $mainBlue;
+//     text-decoration: underline;
+//   }
+// }

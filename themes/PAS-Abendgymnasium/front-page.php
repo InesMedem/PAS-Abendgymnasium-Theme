@@ -1,6 +1,10 @@
 <?php
+/**
+ * Template Name: Custom Template
+ */
 
 get_header(); ?>
+
 
 
 <div class="page-banner overlay">
@@ -18,7 +22,7 @@ get_header(); ?>
   </div>
   <div class="page-banner__content container t-center c-white container--hero">
     <h1 class="headline headline--large"><?php the_title(); ?></h1>
-    <h3 class="headline headline--small container--narrow"><?php the_excerpt(); ?></h3>
+    <h3 class="headline headline--small container--narrower"><?php the_excerpt(); ?></h3>
     <a href="#" class="btn btn--large btn--blue">Jetzt Anmelden</a>
   </div>
 </div>
@@ -30,7 +34,7 @@ get_header(); ?>
 </div>
 
 <section class="beigeBg">
-  <div class="container container--narrow page-section ">
+  <div class="container container--narrower page-section ">
     <?php
     // Custom query to get only 5 posts
     $args = array(
@@ -76,48 +80,42 @@ get_header(); ?>
 
 
 
-<section class="contact">
+<section class="contact generic-content ">
   <div class="container container--narrow page-section t-center ">
     <h2 class="headline headline--large-medium">Wir helfen gerne</h2>
-    <!-- <h3 class="headline headline--smaller container--narrow">      If you are interested in registering or have a specific question, please contact us by phone or using our contact form.
-    </h3> -->
+    <h3 class="headline headline--smaller container--narrow">      If you are interested in registering or have a specific question, please contact us by phone or using our contact form.
+    </h3>
     <div class="contact__details">
-      <nav class="">
-
+      <div class="contact__img-wrapper">
+      <img class="contact__img" src="http://localhost:10014/wp-content/uploads/2024/11/Peter-A.-Silbermann-Schule-Architektur.jpg" alt="Peter A. Silbermann School Architecture" />
+      </div>
         <ul class="">
-          <li class="site-footer__icon">
+          <li class="contact__icon">
             <img src="<?php echo get_template_directory_uri(); ?>/images/phone.svg" alt="Telephone Icon" />
             <a href="tel:+493089745160" target="_blank">
               <p>+49 (0)30 / 897 451 60</p>
             </a>
           </li>
 
-          <li class="site-footer__icon">
+          <li class="contact__icon">
             <img src="<?php echo get_template_directory_uri(); ?>/images/mail.svg" alt="Mail Icon" />
             <a href="mailto:info@abendgymnasium.de" target="_blank">
               <p>info@abendgymnasium.de</p>
             </a>
           </li>
 
-          <li class="site-footer__icon">
+          <li class="contact__icon">
             <img src="<?php echo get_template_directory_uri(); ?>/images/map.svg" alt="Pin Icon" />
             <a href="https://maps.app.goo.gl/VPGC7Uc4kcSgC9P28" target="_blank">
               <p>Blissestraße 22, 10713 Berlin-Wilmersdorf</p>
             </a>
         </ul>
-      </nav>
 
-      <div class="contact__img">
-      <img>
-      </div>
+
 
     </div>
   </div>
 </section>
-
-
-
-
 
 
 <?php

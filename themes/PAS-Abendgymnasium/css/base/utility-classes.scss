@@ -1,17 +1,13 @@
-@media (max-width: 456px) {
-  .stack {
-    display: flex;
-    flex-direction: column;
-  }
-}
+// @media (max-width: 456px) {
+//   .stack {
+//     display: flex;
+//     flex-direction: column;
+//   }
+// }
 
 .flex-col {
   display: flex;
   flex-direction: column;
-}
-
-img {
-  border-radius: 8px;
 }
 
 .container {
@@ -22,7 +18,11 @@ img {
 }
 
 .container--narrow {
-  max-width: 960px;
+  max-width: 1100px;
+}
+
+.container--narrower {
+  max-width: 900px;
 }
 
 .container--hero {

@@ -1,5 +1,5 @@
 <footer class="site-footer">
-  <div class=" container container--narrow">
+  <div class="container container--narrow">
     <div class="site-footer__flex-container--row">
       <nav class="site-footer__nav-list">
         <ul>

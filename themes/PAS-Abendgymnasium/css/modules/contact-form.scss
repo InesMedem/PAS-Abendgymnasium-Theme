@@ -13,9 +13,7 @@
   }
 
   & h4 {
-    margin-top: 20px;
-    overflow-wrap: break-word;
-    font-weight: 400;
+    color: #eb433e;
   }
 }
 
@@ -50,7 +48,7 @@
 .wpcf7 input[type="submit"] {
   color: #ffffff;
   font-weight: 500;
-  background: #173f58;
+  background: $mainBlue;
   padding: 15px 25px 15px 25px;
   border: none;
   text-transform: uppercase;
