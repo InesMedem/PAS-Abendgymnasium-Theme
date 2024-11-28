@@ -4,7 +4,81 @@ get_header(); ?>
 
 <div class="container container--narrow page-section">
 
-  <div>
+<div>
+  <h1>HEADLINE</h1>
+  <h1 class="headline headline--large">
+    Large Headline 
+  </h1> <p>font-weight: 400 /* Slightly bold */ </p>
+
+  <h2 class="headline headline--large-medium">
+    Large-Medium Headline 
+  </h2> <p>font-weight: 200 /* Regular */</p>
+
+  <h3 class="headline headline--medium">
+    Medium Headline 
+  </h3><p>font-weight: 500 /* Medium */</p>
+
+  <h4 class="headline headline--small-plus">
+    Small-Plus Headline 
+  </h4> <p>font-weight: 400 /* Slightly bold */ </p>
+
+  <h5 class="headline headline--small">
+    Small Headline 
+  </h5>  <p>font-weight: 300 /* Light */ </p>
+
+
+  <h6 class="headline headline--smaller">
+    Smaller Headline 
+  </h6>  <p>font-weight: 200 /* Extra Light */ </p>
+
+  <p class="headline headline--tiny">
+    This is Tiny Text 
+  </p> <p>font-weight: 300 /* Light */ and italic </p>
+
+  <h1>
+    h1 (inherits font-weight: default)
+  </h1>
+
+  <h2>
+    h2 (inherits font-weight: default)
+  </h2>
+
+  <h3>
+    h3 (inherits font-weight: default)
+  </h3>
+
+  <h4>
+    h4 (inherits font-weight: default)
+  </h4>
+
+  <h5>
+    h5 (inherits font-weight: default)
+  </h5>
+
+  <h6>
+    h6 (inherits font-weight: default)
+  </h6>
+
+  <p>
+    paragraph (inherits font-weight: default)
+  </p>
+
+  <p class="has-x-large-font-size">
+    Has X-large font size (inherits font-weight: default)
+  </p>
+  <p class="has-large-font-size">
+    Has large font size (inherits font-weight: default)
+  </p>
+  <p class="has-medium-font-size">
+    Has medium font size (inherits font-weight: default)
+  </p>
+  <p class="has-small-font-size">
+    Has small font size (inherits font-weight: default)
+  </p>
+</div>
+
+
+  <!-- <div>
 
 
     <h1>HEADLINE</h1>
@@ -69,7 +143,7 @@ get_header(); ?>
     <p class="has-medium-font-size"> Has medium font size </p>
     <p class="has-small-font-size"> Has small font size </p>
 
-  </div>
+  </div> -->
   <div>
 
     <!-- Orange Button -->

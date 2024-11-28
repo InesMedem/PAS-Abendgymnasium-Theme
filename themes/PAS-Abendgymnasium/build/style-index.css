@@ -9,9 +9,10 @@
 
 body {
   color: #333;
-  font-family: "Roboto", sans-serif;
   overflow-x: hidden;
   position: relative;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
 }
 
 img {
@@ -435,25 +436,43 @@ li {
 .site-header {
   z-index: 3;
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  padding: 0;
   display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.site-header__container {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  justify-content: space-around;
+}
+.site-header__menu {
+  display: flex;
+  background-color: greenyellow;
+  align-items: center;
+  font-size: 19px;
+}
+.site-header__nav ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.site-header__nav ul li {
+  margin-right: 20px;
 }
 .site-header a {
   text-decoration: none;
   display: flex;
   align-items: center;
 }
+.site-header h3 span {
+  font-weight: 200;
+}
 .site-header img {
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.146);
-}
-.site-header__container {
-  display: flex;
-  margin: 0 auto;
-  width: 1300px;
-  justify-content: space-between;
 }
 .site-header__logo {
   display: flex;
@@ -463,19 +482,13 @@ li {
   justify-content: center;
 }
 .site-header__logoText {
+  color: white;
   display: flex;
   flex-direction: column;
   margin-left: 10px;
 }
 .site-header__logoText p {
-  color: white;
   margin: 0;
-  font-weight: 300;
-}
-.site-header__nav {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 .site-header__menu {
   visibility: hidden;
@@ -507,25 +520,6 @@ li {
     top: 0;
   }
 }
-.site-header__search-trigger {
-  cursor: pointer;
-  color: #fff;
-  font-size: 1.2rem;
-  position: absolute;
-  top: 6px;
-  right: 16px;
-}
-@media (min-width: 530px) {
-  .site-header__search-trigger {
-    top: 4px;
-    font-size: 1.4rem;
-  }
-}
-@media (min-width: 960px) {
-  .site-header__search-trigger {
-    display: none;
-  }
-}
 .site-header__menu-trigger {
   color: #fff;
   cursor: pointer;
@@ -545,26 +539,6 @@ li {
   .site-header__menu-trigger {
     display: none;
   }
-}
-.site-header__util {
-  padding: 0 0 0 20px;
-}
-@media (min-width: 960px) {
-  .site-header__util {
-    padding: 0;
-    float: right;
-  }
-}
-.site-header__btn {
-  margin-right: 20px;
-}
-@media (min-width: 960px) {
-  .site-header__btn {
-    float: left;
-  }
-}
-.site-header .btn--with-photo {
-  margin-right: 0;
 }
 
 .site-footer {
@@ -596,48 +570,17 @@ li {
 }
 
 .main-navigation {
-  padding-top: 2px;
+  display: flex;
+  background-color: greenyellow;
 }
-.main-navigation ul {
-  padding: 0;
-  margin: 0;
-}
-.main-navigation ul:before,
-.main-navigation ul:after {
-  content: " ";
-  display: table;
-}
-.main-navigation ul:after {
-  clear: both;
-}
-@media (min-width: 960px) {
-  .main-navigation {
-    float: left;
-    margin-right: 20px;
-  }
-}
-
 .main-navigation li {
   list-style: none;
 }
-@media (min-width: 960px) {
-  .main-navigation li {
-    float: left;
-    padding-left: 20px;
-  }
-}
-
 .main-navigation a {
-  display: block;
-  text-transform: uppercase;
-  padding: 10px 20px;
   color: #fff;
-  text-decoration: none;
-  font-weight: 400;
 }
 @media (min-width: 960px) {
   .main-navigation a {
-    display: inline-block;
     padding: 0;
   }
 }
@@ -679,27 +622,10 @@ h4,
 h5,
 h6 {
   margin: 0;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande" "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 300;
-}
-.headline h1,
-h1 h1,
-h2 h1,
-h3 h1,
-h4 h1,
-h5 h1,
-h6 h1 {
-  margin: 0;
-}
-.headline p,
-h1 p,
-h2 p,
-h3 p,
-h4 p,
-h5 p,
-h6 p {
-  margin-block-start: 0px;
-  margin-block-end: 0px;
+  /* Default weight */
+  /* Specific headline styles */
 }
 .headline--large,
 h1--large,
@@ -710,7 +636,7 @@ h5--large,
 h6--large {
   color: red !important;
   font-size: clamp(2.5rem, 5vw, 5rem);
-  font-weight: 400;
+  font-weight: 400; /* Slightly bold */
 }
 .headline--large-medium,
 h1--large-medium,
@@ -721,6 +647,7 @@ h5--large-medium,
 h6--large-medium {
   color: blueviolet !important;
   font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 200; /* Regular */
 }
 .headline--medium,
 h1--medium,
@@ -731,6 +658,7 @@ h5--medium,
 h6--medium {
   font-size: clamp(1.6rem, 3vw, 2.3rem);
   color: blue !important;
+  font-weight: 500; /* Medium */
 }
 .headline--small-plus,
 h1--small-plus,
@@ -740,7 +668,8 @@ h4--small-plus,
 h5--small-plus,
 h6--small-plus {
   font-size: clamp(1.4rem, 2.5vw, 1.8rem);
-  font-weight: 400;
+  font-weight: 400; /* Regular */
+  color: green !important;
 }
 .headline--small,
 h1--small,
@@ -751,6 +680,90 @@ h5--small,
 h6--small {
   color: yellow !important;
   font-size: clamp(1rem, 2vw, 1.4rem);
+  font-weight: 300; /* Light */
+}
+.headline--smaller,
+h1--smaller,
+h2--smaller,
+h3--smaller,
+h4--smaller,
+h5--smaller,
+h6--smaller {
+  font-size: 0.875rem; /* Smaller text */
+  font-weight: 200; /* Extra light */
+  color: orange;
+}
+.headline--tiny,
+h1--tiny,
+h2--tiny,
+h3--tiny,
+h4--tiny,
+h5--tiny,
+h6--tiny {
+  font-size: 0.75rem; /* Tiny text */
+  font-weight: 300; /* Light */
+  font-style: italic;
+  color: gray;
+}
+
+/* Default styling for headings */
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700; /* Bold */
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 600; /* Semi-bold */
+}
+
+h3 {
+  font-size: 1.75rem;
+  font-weight: 500; /* Medium */
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: 400; /* Regular */
+}
+
+h5 {
+  font-size: 1.25rem;
+  font-weight: 300; /* Light */
+}
+
+h6 {
+  font-size: 1rem;
+  font-weight: 300; /* Light */
+}
+
+/* Paragraph variations */
+p {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.has-x-large-font-size {
+  font-size: 2rem;
+  font-weight: 600;
+  color: darkblue;
+}
+
+.has-large-font-size {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: teal;
+}
+
+.has-medium-font-size {
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+
+.has-small-font-size {
+  font-size: 0.875rem;
+  font-weight: 300;
+  color: darkgray;
 }
 
 .page-section {
@@ -779,30 +792,6 @@ h6--small {
 }
 .generic-content img {
   border-radius: 8px;
-}
-.generic-content h1 {
-  color: red !important;
-  font-size: clamp(2.5rem, 5vw, 5rem);
-}
-.generic-content h2 {
-  color: blueviolet !important;
-  font-size: clamp(2rem, 4vw, 3.5rem);
-}
-.generic-content h3 {
-  font-size: clamp(1.6rem, 3vw, 2.3rem);
-  color: blue !important;
-}
-.generic-content h4 {
-  font-size: clamp(1.4rem, 2.5vw, 1.8rem);
-  font-weight: 400;
-}
-.generic-content h5 {
-  color: yellow !important;
-  font-size: clamp(1rem, 2vw, 1.4rem);
-}
-.generic-content h6 {
-  font-size: 1rem;
-  font-size: calc(0.95rem + 1.3vw);
 }
 
 .event-summary {

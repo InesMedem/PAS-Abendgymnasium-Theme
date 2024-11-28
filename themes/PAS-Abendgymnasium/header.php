@@ -9,7 +9,7 @@
 
 <body <?php body_class(); ?>>
 
-  <header class="site-header">
+  <header class="site-header ">
     <div class="site-header__container">
 
       <div class="site-header__logo">
@@ -18,8 +18,8 @@
             style="width: 80px; height: auto;"
             alt="Logo" /> 
         <div class="site-header__logoText">
-          <h3 class="headline headline--small-plus float-left">
-            <strong>Peter-A.</strong>-Silbermann-Schule
+          <h3 class="headline--small-plus float-left">
+            Peter-A.-<span>Silbermann-Schule</span>
           </h3>
           <p>Staatliches Abendgymnasium für Berufstätige</p>
         </div></a>
@@ -28,16 +28,16 @@
       <!-- <span class="js-search-trigger site-header__search-trigger"><i class="fa fa-search" aria-hidden="true"></i></span> -->
       <div class="site-header__nav">
         <i class="site-header__menu-trigger fa fa-bars" aria-hidden="true"></i>
-        <div class="site-header__menu group">
-          <nav class="main-navigation">
+        <div class="site-header__menu">
+          <nav class="site-header__nav ">
             <ul>
               <?php wp_nav_menu(array(
                 'theme_location' => 'headerMenuLocation'
               )) ?>
             </ul>
           </nav>
-          <div class="site-header__util">
-            <a href="<?php echo site_url('/voraussetzungen-und-anmeldung') ?>" class="btn btn--small btn--orange float-left push-right"><b>ANMELDUNG</b></a>
+          <div class="site-header__btn">
+            <a href="<?php echo site_url('/voraussetzungen-und-anmeldung') ?>" class="btn btn--medium btn--orange"><b>Anmeldung</b></a>
             <!-- <span class="search-trigger js-search-trigger"><i class="fa fa-search" aria-hidden="true"></i></span> -->
           </div>
         </div>
