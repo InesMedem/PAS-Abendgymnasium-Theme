@@ -23,7 +23,6 @@
 
   &__menu {
     display: flex;
-    background-color: greenyellow;
     align-items: center;
     font-size: 19px;
   }
@@ -45,6 +44,12 @@
     text-decoration: none;
     display: flex;
     align-items: center;
+    color: #fff;
+  }
+
+  & a:hover {
+    color: $beige;
+    // text-decoration: underline;
   }
 
   & h3 span {
@@ -167,4 +172,10 @@
   // .btn--with-photo {
   //   margin-right: 0;
   // }
+}
+
+.main-navigation .current-menu-item a,
+.main-navigation a:hover {
+  color: $beige;
+  // font-weight: bold;
 }

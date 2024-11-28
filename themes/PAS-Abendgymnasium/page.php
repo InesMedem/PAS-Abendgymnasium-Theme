@@ -45,7 +45,7 @@ while (have_posts()) {
 
     ?>
       <div class="page-links">
-        <h2 class="page-links__title"><a href="#"><?php echo get_the_title($theParent) ?></a></h2>
+        <h3 class="page-links__title"><a href="#"><?php echo get_the_title($theParent) ?></a></h3>
         <ul class="min-list">
           <?php
 

@@ -22,7 +22,6 @@ get_header(); ?>
   </div>
   <div class="page-banner__content container t-center c-white container--hero">
     <h1 class="headline headline--large"><?php the_title(); ?></h1>
-    <!-- <h3 class="headline headline--medium container--narrower"><?php the_excerpt(); ?></h3> -->
     <h3 class="headline headline--small container--narrower">
     <?php echo strip_tags(get_the_excerpt(), '<h3>'); ?></h3>
     <a href="#" class="btn btn--large btn--blue">Jetzt Anmelden</a>
@@ -85,7 +84,7 @@ get_header(); ?>
 <section class="contact generic-content ">
   <div class="container container--narrow page-section t-center ">
     <h2 class="headline headline--large-medium">Wir helfen gerne</h2>
-    <h3 class="headline headline--smaller container--narrow">      If you are interested in registering or have a specific question, please contact us by phone or using our contact form.
+    <h3 class="headline headline--small container--narrow">If you are interested in registering or have a specific question, please contact us by phone or using our contact form.
     </h3>
     <div class="contact__details">
       <div class="contact__img-wrapper">

@@ -1,5 +1,4 @@
 .site-footer {
-  // background-image: linear-gradient(#fff, #ececece6);
   background-color: $mainBlue;
 
   &__flex-container--row {
@@ -29,15 +28,6 @@
   }
 
   &__buttom-container {
-    // align-items: center;
-    // padding-bottom: 5px;
-    // padding-top: 5px;
-    // justify-content: center;
     background-color: $mainBlue;
-    // color: white;
-    // display: flex;
-    // justify-content: space-around;
-    // font-size: 14px;
-    // margin-top: 20px;
   }
 }

@@ -6,6 +6,9 @@
     padding: 160px 0 90px 0;
   }
 
+  &__content {
+    gap: 1rem;
+  }
   &__bg-image {
     opacity: 0.55;
     background-size: cover;

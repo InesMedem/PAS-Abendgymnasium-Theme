@@ -13,6 +13,7 @@ body {
   position: relative;
   font-family: "Poppins", sans-serif;
   font-weight: 300;
+  background-color: whitesmoke;
 }
 
 img {
@@ -32,6 +33,10 @@ li {
 .flex-col {
   display: flex;
   flex-direction: column;
+}
+
+.hide {
+  display: none;
 }
 
 .container {
@@ -144,10 +149,6 @@ li {
   clear: both;
 }
 
-.hide {
-  display: none;
-}
-
 /* BEM Blocks */
 .search-trigger {
   display: none;
@@ -192,7 +193,7 @@ li {
 }
 
 .social-color-facebook {
-  background-color: #4862a3;
+  background-color: #ee964b;
 }
 
 .social-color-twitter {
@@ -200,11 +201,11 @@ li {
 }
 
 .social-color-youtube {
-  background-color: #cc1e1f;
+  background-color: #ee964b;
 }
 
 .social-color-linkedin {
-  background-color: #0077b5;
+  background-color: #ee964b;
 }
 
 .social-color-instagram {
@@ -450,7 +451,6 @@ li {
 }
 .site-header__menu {
   display: flex;
-  background-color: greenyellow;
   align-items: center;
   font-size: 19px;
 }
@@ -467,6 +467,10 @@ li {
   text-decoration: none;
   display: flex;
   align-items: center;
+  color: #fff;
+}
+.site-header a:hover {
+  color: #faf0ca;
 }
 .site-header h3 span {
   font-weight: 200;
@@ -541,6 +545,11 @@ li {
   }
 }
 
+.main-navigation .current-menu-item a,
+.main-navigation a:hover {
+  color: #faf0ca;
+}
+
 .site-footer {
   background-color: #0d3b66;
 }
@@ -569,27 +578,6 @@ li {
   background-color: #0d3b66;
 }
 
-.main-navigation {
-  display: flex;
-  background-color: greenyellow;
-}
-.main-navigation li {
-  list-style: none;
-}
-.main-navigation a {
-  color: #fff;
-}
-@media (min-width: 960px) {
-  .main-navigation a {
-    padding: 0;
-  }
-}
-
-.main-navigation .current-menu-item a,
-.main-navigation a:hover {
-  color: #faf0ca;
-}
-
 .page-banner {
   background-color: #000000;
   padding: 80px 0 40px 0;
@@ -599,6 +587,9 @@ li {
   .page-banner {
     padding: 160px 0 90px 0;
   }
+}
+.page-banner__content {
+  gap: 1rem;
 }
 .page-banner__bg-image {
   opacity: 0.55;
@@ -612,6 +603,26 @@ li {
 }
 .page-banner__intro p {
   margin: 0;
+}
+
+.headline {
+  color: whitesmoke !important;
+}
+
+.has-x-large-font-size,
+.has-large-font-size,
+.has-medium-font-size,
+.has-small-font-size {
+  color: teal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #0d3b66;
 }
 
 .headline,
@@ -634,7 +645,6 @@ h3--large,
 h4--large,
 h5--large,
 h6--large {
-  color: red !important;
   font-size: clamp(2.5rem, 5vw, 5rem);
   font-weight: 400; /* Slightly bold */
 }
@@ -645,7 +655,6 @@ h3--large-medium,
 h4--large-medium,
 h5--large-medium,
 h6--large-medium {
-  color: blueviolet !important;
   font-size: clamp(2rem, 4vw, 3.5rem);
   font-weight: 200; /* Regular */
 }
@@ -657,8 +666,7 @@ h4--medium,
 h5--medium,
 h6--medium {
   font-size: clamp(1.6rem, 3vw, 2.3rem);
-  color: blue !important;
-  font-weight: 500; /* Medium */
+  font-weight: 200; /* Medium */
 }
 .headline--small-plus,
 h1--small-plus,
@@ -669,7 +677,6 @@ h5--small-plus,
 h6--small-plus {
   font-size: clamp(1.4rem, 2.5vw, 1.8rem);
   font-weight: 400; /* Regular */
-  color: green !important;
 }
 .headline--small,
 h1--small,
@@ -678,7 +685,6 @@ h3--small,
 h4--small,
 h5--small,
 h6--small {
-  color: yellow !important;
   font-size: clamp(1rem, 2vw, 1.4rem);
   font-weight: 300; /* Light */
 }
@@ -691,7 +697,6 @@ h5--smaller,
 h6--smaller {
   font-size: 0.875rem; /* Smaller text */
   font-weight: 200; /* Extra light */
-  color: orange;
 }
 .headline--tiny,
 h1--tiny,
@@ -703,38 +708,38 @@ h6--tiny {
   font-size: 0.75rem; /* Tiny text */
   font-weight: 300; /* Light */
   font-style: italic;
-  color: gray;
 }
 
 /* Default styling for headings */
 h1 {
-  font-size: 2.5rem;
-  font-weight: 700; /* Bold */
+  font-size: clamp(2.5rem, 5vw, 5rem);
+  font-weight: 400; /* Slightly bold */
 }
 
 h2 {
-  font-size: 2rem;
-  font-weight: 600; /* Semi-bold */
+  font-size: clamp(1.6rem, 3vw, 2.3rem);
+  font-weight: 400; /* Medium */
 }
 
 h3 {
-  font-size: 1.75rem;
-  font-weight: 500; /* Medium */
-}
-
-h4 {
-  font-size: 1.5rem;
+  font-size: clamp(1.4rem, 2.5vw, 1.8rem);
   font-weight: 400; /* Regular */
 }
 
-h5 {
-  font-size: 1.25rem;
+h4 {
+  font-size: clamp(1rem, 2vw, 1.4rem);
   font-weight: 300; /* Light */
 }
 
+h5 {
+  font-size: 0.875rem; /* Smaller text */
+  font-weight: 200; /* Extra light */
+}
+
 h6 {
-  font-size: 1rem;
+  font-size: 0.75rem; /* Tiny text */
   font-weight: 300; /* Light */
+  font-style: italic;
 }
 
 /* Paragraph variations */
@@ -746,13 +751,11 @@ p {
 .has-x-large-font-size {
   font-size: 2rem;
   font-weight: 600;
-  color: darkblue;
 }
 
 .has-large-font-size {
   font-size: 1.5rem;
   font-weight: 500;
-  color: teal;
 }
 
 .has-medium-font-size {
@@ -763,7 +766,6 @@ p {
 .has-small-font-size {
   font-size: 0.875rem;
   font-weight: 300;
-  color: darkgray;
 }
 
 .page-section {
@@ -866,6 +868,7 @@ p {
   padding: 20px;
   background-color: #0d3b66;
   color: #fff;
+  overflow-wrap: break-word;
 }
 .page-links__title a {
   color: #fff;

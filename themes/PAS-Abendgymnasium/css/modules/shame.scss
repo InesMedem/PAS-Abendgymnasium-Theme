@@ -1,55 +1,3 @@
-// .remove-favorite {
-//   display: inline-block;
-//   transition: all 0.3s;
-//   color: #999;
-//   font-size: 0.9rem;
-//   cursor: pointer;
-//   padding: 4px 6px;
-//   border-radius: 3px;
-// }
-
-// .remove-favorite:hover {
-//   background-color: #dedede;
-// }
-
-// @keyframes spin {
-//   0% {
-//     -webkit-transform: rotate(0deg);
-//     transform: rotate(0deg);
-//   }
-//   100% {
-//     -webkit-transform: rotate(360deg);
-//     transform: rotate(360deg);
-//   }
-// }
-
-// .spinner-loader {
-//   margin-top: 45px;
-//   border-radius: 50%;
-//   width: 24px;
-//   height: 24px;
-//   border: 0.25rem solid rgba(0, 0, 0, 0.2);
-//   border-top-color: black;
-//   -webkit-animation: spin 1s infinite linear;
-//   animation: spin 1s infinite linear;
-// }
-
-// .c-orange {
-//   color: $darkOrange;
-// }
-// .c-blue {
-//   color: $mainBlue;
-// }
-// .c-white {
-//   color: #fff;
-// }
-// .c-dark {
-//   color: #333;
-// }
-// .gray {
-//   color: #999999;
-// }
-
 .search-trigger {
   display: none;
   color: #fff;
@@ -92,16 +40,19 @@
 }
 
 .social-color-facebook {
-  background-color: #4862a3;
+  // background-color: #4862a3;
+  background-color: $lightOrange;
 }
 .social-color-twitter {
   background-color: #55acee;
 }
 .social-color-youtube {
-  background-color: #cc1e1f;
+  // background-color: #cc1e1f;
+  background-color: $lightOrange;
 }
 .social-color-linkedin {
-  background-color: #0077b5;
+  // background-color: #0077b5;
+  background-color: $lightOrange;
 }
 .social-color-instagram {
   background-color: #d8226b;

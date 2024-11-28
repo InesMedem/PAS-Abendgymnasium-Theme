@@ -1,3 +1,25 @@
+.headline {
+  color: whitesmoke !important;
+}
+
+.has-x-large-font-size,
+.has-large-font-size,
+.has-medium-font-size,
+.has-small-font-size {
+  color: teal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $mainBlue;
+}
+
+////****************
+
 .headline,
 h1,
 h2,
@@ -11,35 +33,36 @@ h6 {
   // font-family: "Roboto", "Lucida Sans", sans-serif;
   font-family: "Poppins", sans-serif;
   font-weight: 300;
+
   /* Default weight */
 
   /* Specific headline styles */
   &--large {
-    color: red !important;
+    // color: red !important;
     font-size: clamp(2.5rem, 5vw, 5rem);
     font-weight: 400; /* Slightly bold */
   }
 
   &--large-medium {
-    color: blueviolet !important;
+    // color: blueviolet !important;
     font-size: clamp(2rem, 4vw, 3.5rem);
     font-weight: 200; /* Regular */
   }
 
   &--medium {
     font-size: clamp(1.6rem, 3vw, 2.3rem);
-    color: blue !important;
-    font-weight: 500; /* Medium */
+    // color: blue !important;
+    font-weight: 200; /* Medium */
   }
 
   &--small-plus {
     font-size: clamp(1.4rem, 2.5vw, 1.8rem);
     font-weight: 400; /* Regular */
-    color: green !important;
+    // color: green !important;
   }
 
   &--small {
-    color: yellow !important;
+    // color: yellow !important;
     font-size: clamp(1rem, 2vw, 1.4rem);
     font-weight: 300; /* Light */
   }
@@ -47,46 +70,53 @@ h6 {
   &--smaller {
     font-size: 0.875rem; /* Smaller text */
     font-weight: 200; /* Extra light */
-    color: orange;
+    // color: orange;
   }
 
   &--tiny {
     font-size: 0.75rem; /* Tiny text */
     font-weight: 300; /* Light */
     font-style: italic;
-    color: gray;
+    // color: gray;
   }
 }
 
 /* Default styling for headings */
 h1 {
-  font-size: 2.5rem;
-  font-weight: 700; /* Bold */
+  // color: red !important;
+  font-size: clamp(2.5rem, 5vw, 5rem);
+  font-weight: 400; /* Slightly bold */
 }
 
 h2 {
-  font-size: 2rem;
-  font-weight: 600; /* Semi-bold */
+  font-size: clamp(1.6rem, 3vw, 2.3rem);
+  // color: blue !important;
+  font-weight: 400; /* Medium */
 }
 
 h3 {
-  font-size: 1.75rem;
-  font-weight: 500; /* Medium */
+  font-size: clamp(1.4rem, 2.5vw, 1.8rem);
+  font-weight: 400; /* Regular */
+  // color: green !important;
 }
 
 h4 {
-  font-size: 1.5rem;
-  font-weight: 400; /* Regular */
+  // color: yellow !important;
+  font-size: clamp(1rem, 2vw, 1.4rem);
+  font-weight: 300; /* Light */
 }
 
 h5 {
-  font-size: 1.25rem;
-  font-weight: 300; /* Light */
+  font-size: 0.875rem; /* Smaller text */
+  font-weight: 200; /* Extra light */
+  // color: orange;
 }
 
 h6 {
-  font-size: 1rem;
+  font-size: 0.75rem; /* Tiny text */
   font-weight: 300; /* Light */
+  font-style: italic;
+  // color: gray;
 }
 
 /* Paragraph variations */
@@ -98,13 +128,11 @@ p {
 .has-x-large-font-size {
   font-size: 2rem;
   font-weight: 600;
-  color: darkblue;
 }
 
 .has-large-font-size {
   font-size: 1.5rem;
   font-weight: 500;
-  color: teal;
 }
 
 .has-medium-font-size {
@@ -115,5 +143,4 @@ p {
 .has-small-font-size {
   font-size: 0.875rem;
   font-weight: 300;
-  color: darkgray;
 }

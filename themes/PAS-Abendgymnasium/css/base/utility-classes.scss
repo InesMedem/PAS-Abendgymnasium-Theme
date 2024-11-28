@@ -10,6 +10,10 @@
   flex-direction: column;
 }
 
+.hide {
+  display: none;
+}
+
 .container {
   max-width: 1300px;
   margin: 0 auto;
@@ -111,8 +115,4 @@
 .container:after,
 .group:after {
   clear: both;
-}
-
-.hide {
-  display: none;
 }
