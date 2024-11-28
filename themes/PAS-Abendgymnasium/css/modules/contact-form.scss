@@ -4,6 +4,7 @@
   background-color: #faf0ca;
   padding: 20px;
   border-radius: 8px;
+  align-items: center;
 
   &__row {
     display: flex;
@@ -13,20 +14,22 @@
   }
 
   & h4 {
-    color: #eb433e;
+    font-size: clamp(1.4rem, 2.5vw, 1.8rem);
+    margin-top: 15px;
+    font-weight: 400;
   }
 }
 
-.remove-margin {
-  margin-top: 0 !important;
-}
+// .remove-margin {
+//   margin-top: 0 !important;
+// }
 
-.form p {
-  margin-left: 0;
-  margin-right: 0;
-  margin-bottom: 15px;
-  margin-top: 15px;
-}
+// .form p {
+//   margin-left: 0;
+//   margin-right: 0;
+//   margin-bottom: 15px;
+//   margin-top: 15px;
+// }
 
 .form p i {
   font-size: 14px;
