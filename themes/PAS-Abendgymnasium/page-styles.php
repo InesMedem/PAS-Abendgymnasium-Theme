@@ -1,6 +1,13 @@
 <?php
-
-get_header(); ?>
+get_header();
+while (have_posts()) {
+  the_post(); 
+  pageBanner(array(
+    // 'title' => 'hello Title',
+    // 'photo' => 'https://static.vecteezy.com/vite/assets/photo-masthead-375-BoK_p8LG.webp',
+    // 'subtitle' => 'this is a subtitle'
+));
+?>
 
 <div class="container container--narrow page-section">
 
@@ -75,6 +82,61 @@ get_header(); ?>
   <p class="has-small-font-size">
     Has small font size (inherits font-weight: default)
   </p>
+
+  <h1>Brand Colors Style Guide</h1>
+  <div class="color-grid">
+  <div class="color-item">
+      <div class="color-swatch" style="background-color: #fffaf2;"></div>
+      <div class="color-details">
+        <div class="color-name">$whitesmoke</div>
+        <div class="color-hex">#f5f5f5</div>
+      </div>
+    </div>
+    <div class="color-item">
+      <div class="color-swatch" style="background-color: #faf0ca;"></div>
+      <div class="color-details">
+        <div class="color-name">$beige</div>
+        <div class="color-hex">#faf0ca</div>
+      </div>
+    </div>
+    <div class="color-item">
+      <div class="color-swatch" style="background-color: #f4d35e;"></div>
+      <div class="color-details">
+        <div class="color-name">$mainYellow</div>
+        <div class="color-hex">#f4d35e</div>
+      </div>
+    </div>
+    <div class="color-item">
+      <div class="color-swatch" style="background-color: #0d3b66;"></div>
+      <div class="color-details">
+        <div class="color-name">$mainBlue</div>
+        <div class="color-hex">#0d3b66</div>
+      </div>
+    </div>
+    <div class="color-item">
+      <div class="color-swatch" style="background-color: #2d8180;"></div>
+      <div class="color-details">
+        <div class="color-name">$teal</div>
+        <div class="color-hex">#2d8180</div>
+      </div>
+    </div>
+    <div class="color-item">
+      <div class="color-swatch" style="background-color: #ee964b;"></div>
+      <div class="color-details">
+        <div class="color-name">$lightOrange</div>
+        <div class="color-hex">#ee964b</div>
+      </div>
+    </div>
+    <div class="color-item">
+      <div class="color-swatch" style="background-color: #f95738;"></div>
+      <div class="color-details">
+        <div class="color-name">$darkOrange</div>
+        <div class="color-hex">#f95738</div>
+      </div>
+    </div>
+
+  </div>
+
 </div>
 
 
@@ -157,7 +219,7 @@ get_header(); ?>
 
 </div>
 
-<?php
+<?php }
 get_footer();
 
 ?>

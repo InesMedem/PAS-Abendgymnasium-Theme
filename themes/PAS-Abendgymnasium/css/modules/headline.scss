@@ -1,26 +1,25 @@
-.headline {
-  color: whitesmoke !important;
-}
+// .headline {
+//   color: $mainBlue;
+// }
 
-.has-x-large-font-size,
-.has-large-font-size,
-.has-medium-font-size,
-.has-small-font-size {
-  color: teal;
-}
+// .has-x-large-font-size,
+// .has-large-font-size,
+// .has-medium-font-size,
+// .has-small-font-size {
+//   color: teal;
+// }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: $mainBlue;
-}
+// h1,
+// h2,
+// h3,
+// h4,
+// h5,
+// h6 {
+//   color: $mainBlue;
+// }
 
 ////****************
 
-.headline,
 h1,
 h2,
 h3,
@@ -33,8 +32,12 @@ h6 {
   // font-family: "Roboto", "Lucida Sans", sans-serif;
   font-family: "Poppins", sans-serif;
   font-weight: 300;
+}
 
-  /* Default weight */
+.headline {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  // font-weight: 600;
 
   /* Specific headline styles */
   &--large {
@@ -46,13 +49,13 @@ h6 {
   &--large-medium {
     // color: blueviolet !important;
     font-size: clamp(2rem, 4vw, 3.5rem);
-    font-weight: 200; /* Regular */
+    font-weight: 300; /* Regular */
   }
 
   &--medium {
     font-size: clamp(1.6rem, 3vw, 2.3rem);
     // color: blue !important;
-    font-weight: 200; /* Medium */
+    font-weight: 300; /* Medium */
   }
 
   &--small-plus {

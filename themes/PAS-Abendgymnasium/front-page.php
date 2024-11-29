@@ -28,13 +28,29 @@ get_header(); ?>
   </div>
 </div>
 
-<div class="container container--narrow page-section">
+<!-- <div class="container container--narrow page-section">
   <div class="generic-content">
     <?php the_content(); ?>
   </div>
-</div>
+</div> -->
 
-<section class="beigeBg">
+<?php if (is_page('full-width-page')) : ?>
+  <div class="container container--wide page-section">
+    <div class="generic-content">
+      <?php the_content(); ?>
+    </div>
+  </div>
+<?php else : ?>
+  <div class="container container--narrow page-section">
+    <div class="generic-content">
+      <?php the_content(); ?>
+    </div>
+  </div>
+<?php endif; ?>
+
+<!--*** OUR BLOG  ***-->
+
+<section>
   <div class="container container--narrower page-section ">
     <?php
     // Custom query to get only 5 posts
@@ -76,15 +92,12 @@ get_header(); ?>
   </div>
 </section>
 
+<!--*** OUR contact  ***-->
 
-
-
-
-
-<section class="contact generic-content ">
-  <div class="container container--narrow page-section t-center ">
-    <h2 class="headline headline--large-medium">Wir helfen gerne</h2>
-    <h3 class="headline headline--small container--narrow">If you are interested in registering or have a specific question, please contact us by phone or using our contact form.
+<section class="contact generic-content">
+  <div class="contact__container container container--narrow page-section ">
+    <h2 class="headline headline--large">Wir helfen gerne</h2>
+    <h3 class="headline headline--small container--narrower">If you are interested in registering or have a specific question, please contact us by phone or using our contact form.
     </h3>
     <div class="contact__details">
       <div class="contact__img-wrapper">
