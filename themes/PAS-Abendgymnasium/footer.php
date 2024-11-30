@@ -1,5 +1,5 @@
 <footer class="site-footer">
-  <div class="container container--narrow">
+  <div class=" container container--narrow">
     <div class="site-footer__flex-container--row">
       <nav class="site-footer__nav-list">
         <ul>
@@ -12,13 +12,13 @@
       <nav>
         <ul class="min-list social-icons-list group">
           <li>
-            <a href="https://www.facebook.com/Silbermannschule" class="social-color-facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="https://www.facebook.com/Silbermannschule" class="btn btn--small btn--orange"><i class="fa fa-facebook" aria-hidden="true"></i></a>
           </li>
           <li>
-            <a href="https://www.youtube.com/@DasBerlinerAbendgymnasium" class="social-color-youtube"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+            <a href="https://www.youtube.com/@DasBerlinerAbendgymnasium" class="btn btn--small btn--orange"><i class="fa fa-youtube" aria-hidden="true"></i></a>
           </li>
           <li>
-            <a href="#" class="social-color-linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            <a href="#" class="btn btn--small btn--orange"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
           </li>
       </nav>
     </div>

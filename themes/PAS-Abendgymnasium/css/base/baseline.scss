@@ -28,6 +28,12 @@ body {
 img {
   max-width: 100%;
   height: auto;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.146);
+}
+
+.card {
+  border-radius: 4px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.146);
 }
 
 a {
@@ -50,4 +56,37 @@ li {
   line-height: 1.65;
 
   // font-size: 1.15rem;
+}
+
+.page-section {
+  padding-top: 1.6rem;
+  padding-bottom: 1.6rem;
+  @include atSmall {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+
+  p:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.generic-content {
+  p,
+  li {
+    font-size: 1.15rem;
+  }
+
+  img {
+    border-radius: 8px;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    color: $mainBlue;
+    font-weight: 500;
+  }
 }

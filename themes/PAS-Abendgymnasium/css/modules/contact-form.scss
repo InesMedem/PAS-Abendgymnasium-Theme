@@ -16,7 +16,14 @@
   & h4 {
     font-size: clamp(1.4rem, 2.5vw, 1.8rem);
     margin-top: 15px;
-    font-weight: 400;
+  }
+
+  & h2,
+  h4 {
+    color: $mainBlue;
+    font-weight: 500;
+
+    // color: $olive;
   }
 }
 
