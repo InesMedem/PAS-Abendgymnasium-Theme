@@ -1,0 +1,15 @@
+.front-text {
+  background-color: $mainBlue;
+  //   background-color: $beige;
+  align-content: center;
+  color: white;
+  //   color: $olive;
+  text-align: center;
+  padding: 100px 0 100px 0;
+  line-height: 1.65;
+
+  & span {
+    text-decoration: underline;
+    font-weight: 500;
+  }
+}
