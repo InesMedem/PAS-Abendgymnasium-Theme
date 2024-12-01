@@ -1,53 +1,45 @@
-.contact {
-  background-image: url("http://localhost:10014/wp-content/uploads/2024/11/Peter-A.-Silbermann-Schule-Architektur.jpg");
-  background-size: cover; /* Makes the image cover the entire section */
-  background-position: center; /* Centers the image */
-  background-repeat: no-repeat; /* Prevents the image from repeating */
-  display: flex;
-  justify-content: space-around;
+// .contact {
+//   background-image: url("http://localhost:10014/wp-content/uploads/2024/11/Peter-A.-Silbermann-Schule-Architektur.jpg");
+//   background-size: cover;
+//   background-position: center;
+//   background-repeat: no-repeat;
 
-  // gap: 3rem;
-  //   &__content {
-  //     // max-width: 1300px;
-  //     // // justify-content: left;
-  //     // max-width: 1300px;
-  //     // margin: 0 auto;
-  //   }
+//   // padding: 5px;
+//   // display: flex;
+//   // justify-content: space-around;
 
-  &__wrapper {
-    // background-color: white;
-    display: flex;
-  }
+//   &__wrapper {
+//     // background-color: white;
+//     display: flex;
+//   }
 
-  &__container {
-    margin: 15px;
-    max-width: 1300px;
-    // margin: 0 auto;
-  }
-  & span {
-    color: $mainBlue;
-  }
-  &__icon {
-    display: flex;
-    align-items: center;
-  }
+//   &__container {
+//     // margin: 15px;
+//     // max-width: 1300px;
+//     // margin: 0 auto;
+//   }
+//   & span {
+//     color: $mainBlue;
+//   }
+//   &__icon {
+//     display: flex;
+//     align-items: center;
+//   }
 
-  &__icon svg {
-    margin-right: 1rem;
-  }
+//   &__icon svg {
+//     margin-right: 1rem;
+//   }
 
-  &__icon a p {
-    color: $mainBlue;
-    font-weight: 500;
-  }
-  &__wrapper ul {
-    list-style-type: none;
-    padding-left: 0;
-    text-decoration: none;
-    // padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    // gap: 1.5rem;
-    margin: 0px;
-  }
-}
+//   &__icon a p {
+//     color: $mainBlue;
+//     font-weight: 500;
+//   }
+//   &__wrapper ul {
+//     list-style-type: none;
+//     padding-left: 0;
+//     text-decoration: none;
+//     display: flex;
+//     flex-direction: column;
+//     margin: 0px;
+//   }
+// }

@@ -18,10 +18,10 @@
             style="width: 80px; height: auto;"
             alt="Logo" /> 
         <div class="site-header__logoText">
-          <h3 class="headline--small-plus float-left">
+          <h3 class="headline--small-plus ">
             Peter-A.-<span>Silbermann-Schule</span>
           </h3>
-          <p>Staatliches Abendgymnasium für Berufstätige</p>
+          <p class="">Staatliches Abendgymnasium für Berufstätige</p>
         </div></a>
       </div>
 

@@ -18,8 +18,8 @@ get_header(); ?>
   </div>
   <div class="page-banner__content container t-center c-white container--hero">
     <h1 class="headline headline--large"><?php the_title(); ?></h1>
-    <h3 class="headline headline--small container--narrower">
-      <?php echo strip_tags(get_the_excerpt(), '<h3>'); ?></h3>
+    <h3 class="headline headline--small container--narrower ">
+     <span class="highlight"><?php echo strip_tags(get_the_excerpt(), '<h3>'); ?></span> </h3>
     <a href="#" class="btn btn--large btn--blue">Jetzt Anmelden</a>
   </div>
 </div>
@@ -28,7 +28,7 @@ get_header(); ?>
 
 <div class="front-text">
   <div class="aktuelles__headline container container--narrow">
-  <h3 class="headline headline--medium" > Am ältesten Abendgymnasium Deutschlands können Sie <span>kostenlos</span> das Abitur, die Hochschulreife oder die Fachhochschulreife nachholen und ab der Qualifikationsphase BAföG beantragen.</h3>
+    <h3 class="headline headline--medium"> Am ältesten Abendgymnasium Deutschlands können Sie <span>kostenlos</span> das Abitur, die Hochschulreife oder die Fachhochschulreife nachholen und ab der Qualifikationsphase BAföG beantragen.</h3>
   </div>
 </div>
 
@@ -42,22 +42,16 @@ get_header(); ?>
 
 <!--*** OUR BLOG  ***-->
 
+<div class="container container--narrow aktuelles-summary__outer card">
 
 <div class="aktuelles">
-  <div class="aktuelles__headline container container--narrower">
+  <div class="aktuelles__headline container">
 
     <span class="headline headline--large">Neues und Aktuelles </span>
-    <span class="headline headline--small">Neues aus dem Abendgymnasium </span>
-
-
-
+    <span class="headline headline--small"> <span class="highlight"> Neues aus dem Abendgymnasium </span></span>
 
   </div>
 </div>
-
-
-
-<div class="container container--narrower page-section aktuelles-summary__outer card">
 
   <?php
   // Custom query to get only 5 posts
@@ -69,7 +63,7 @@ get_header(); ?>
   if ($query->have_posts()) :
     while ($query->have_posts()) : $query->the_post();
   ?>
-      <div class="aktuelles-summary">
+      <div class="aktuelles-summary container--narrower">
         <a class="aktuelles-summary__date " href="<?php the_permalink(); ?>">
           <span class="aktuelles-summary__month"><?php echo get_the_date('M'); ?></span>
           <span class="aktuelles-summary__day"><?php echo get_the_date('d'); ?></span>
@@ -109,7 +103,8 @@ get_header(); ?>
 
 
 <div class="contact">
-  <div class="aktuelles__headline container container--narrow card contact__container">
+  <div class="container container--narrow card contact__container flex">
+    <div class="flex-col">
     <span class="headline headline--large">Kontakt</span>
     <span class="headline headline--small">Wir helfen gerne</span>
 
@@ -140,13 +135,20 @@ get_header(); ?>
           </a>
         </li>
       </ul>
-      <div>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2429.7023617867435!2d13.316837076264033!3d52.484524572051804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41652370283f6917%3A0x6da8775082b15d25!2sPeter-A.-Silbermann-Schule!5e0!3m2!1sen!2sau!4v1733052804490!5m2!1sen!2sau" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>      </div>
+      <!-- <div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2429.7023617867435!2d13.316837076264033!3d52.484524572051804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41652370283f6917%3A0x6da8775082b15d25!2sPeter-A.-Silbermann-Schule!5e0!3m2!1sen!2sau!4v1733052804490!5m2!1sen!2sau" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div> -->
     </div>
-        </div>
-
   </div>
+  
+  <div>
+    <img src="http://localhost:10014/wp-content/uploads/2024/11/Peter-A.-Silbermann-Schule-Architektur.jpg" alt="A fresh apple" width="500" height="500">
+  </div>
+  
+</div>
+
+</div>
 
 
 
-  <?php get_footer(); ?>
+<?php get_footer(); ?>
