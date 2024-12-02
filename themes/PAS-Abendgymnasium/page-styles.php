@@ -1,223 +1,125 @@
 <?php
 get_header();
 while (have_posts()) {
-  the_post(); 
+  the_post();
   pageBanner(array(
     // 'title' => 'hello Title',
     // 'photo' => 'https://static.vecteezy.com/vite/assets/photo-masthead-375-BoK_p8LG.webp',
     // 'subtitle' => 'this is a subtitle'
-));
+  ));
 ?>
 
-<div class="container container--narrow page-section">
+  <div class="container container--narrow page-section">
+    <div>
+      <h1 style="margin-bottom: 0.5em; font-weight: 700;">Typografie-Leitfaden</h1>
+      <p style="margin-bottom: 2em; font-size: 1rem;">
+        Dieser Leitfaden zeigt die typografischen Standards unserer Website.
+        Wir verwenden die Schriftart <strong>Poppins</strong>, eine elegante und moderne Sans-Serif-Schriftart,
+        die für Lesbarkeit und Stil optimiert ist. Alle Elemente erben standardmäßig den festgelegten Font-Weight.
+      </p>
 
-<div>
-  <h1>HEADLINE</h1>
-  <h1 class="headline headline--large">
-    Large Headline 
-  </h1> <p>font-weight: 400 /* Slightly bold */ </p>
+      <!-- <h1>h1 – Überschrift 1</h1>
+      <p>Verwendet den standardmäßigen Font-Weight für eine auffällige Hauptüberschrift.</p>
 
-  <h2 class="headline headline--large-medium">
-    Large-Medium Headline 
-  </h2> <p>font-weight: 200 /* Regular */</p>
+      <h2>h2 – Überschrift 2</h2>
+      <p>Perfekt für Sektionen und Unterüberschriften.</p>
 
-  <h3 class="headline headline--medium">
-    Medium Headline 
-  </h3><p>font-weight: 500 /* Medium */</p>
+      <h3>h3 – Überschrift 3</h3>
+      <p>Wird für kleinere Überschriften oder wichtige Absätze verwendet.</p>
 
-  <h4 class="headline headline--small-plus">
-    Small-Plus Headline 
-  </h4> <p>font-weight: 400 /* Slightly bold */ </p>
+      <h4>h4 – Überschrift 4</h4>
+      <p>Gut geeignet für Nebenüberschriften oder detaillierte Inhalte.</p>
 
-  <h5 class="headline headline--small">
-    Small Headline 
-  </h5>  <p>font-weight: 300 /* Light */ </p>
+      <h5>h5 – Überschrift 5</h5>
+      <p>Kleinere, weniger prominente Überschrift für unterstützende Texte.</p>
+
+      <h6>h6 – Überschrift 6</h6>
+      <p>Die kleinste Überschrift für dezente Hinweise oder Fußnoten.</p> -->
+
+      <h2>Bearbeitung in WordPress Gutenberg</h2>
+      <p>Diese Schriftgrößen entsprechen den Optionen, die Sie im WordPress Gutenberg-Editor verwenden können. Beim Bearbeiten des Inhalts können Sie die Schriftgrößen direkt auswählen, um Ihre Überschriften und Texte anzupassen.</p>
+
+      <!-- X-Large Font Size -->
+      <p class="has-x-large-font-size" style=" margin: 0px;">X-Large Schriftgröße</p>
+
+      <!-- Large Font Size -->
+      <p class="has-large-font-size" style="  margin: 0px;">Large Schriftgröße</p>
+     
+      <!-- Medium Font Size -->
+      <p class="has-medium-font-size" style="  margin: 0px;">Medium Schriftgröße</p>
+
+      <!-- Small Font Size -->
+      <p class="has-small-font-size">Small Schriftgröße</p>
 
 
-  <h6 class="headline headline--smaller">
-    Smaller Headline 
-  </h6>  <p>font-weight: 200 /* Extra Light */ </p>
+      <h2>Buttons</h2>
 
-  <p class="headline headline--tiny">
-    This is Tiny Text 
-  </p> <p>font-weight: 300 /* Light */ and italic </p>
+      <!-- Orange Button -->
+      <a href="#" class="btn btn--orange">Oranger Button</a>
+      <p>Der orange Button verwendet einen Verlauf und hebt sich durch seine warme Farbgebung hervor. Ideal für Call-to-Action (CTA) Elemente.</p>
 
-  <h1>
-    h1 (inherits font-weight: default)
-  </h1>
+      <!-- Blue Button -->
+      <a href="#" class="btn btn--blue">Blauer Button</a>
+      <p>Der blaue Button nutzt das Hauptblau der Seite. Er eignet sich gut für wichtige Aktionen oder Links.</p>
 
-  <h2>
-    h2 (inherits font-weight: default)
-  </h2>
+      <h3>Button Größen</h3>
 
-  <h3>
-    h3 (inherits font-weight: default)
-  </h3>
+      <!-- Large Button -->
+      <a href="#" class="btn btn--orange btn--large">Großer Oranger Button</a>
+      <p>Der große Button hat eine größere Schriftgröße und mehr Padding. Perfekt für prominente Call-to-Action-Elemente.</p>
 
-  <h4>
-    h4 (inherits font-weight: default)
-  </h4>
+      <!-- Medium Button -->
+      <a href="#" class="btn btn--blue btn--medium">Mittlerer Blauer Button</a>
+      <p>Der mittlere Button hat eine ausgewogene Größe, die sowohl für kurze als auch für längere Texte geeignet ist.</p>
 
-  <h5>
-    h5 (inherits font-weight: default)
-  </h5>
+      <!-- Small Button -->
+      <a href="#" class="btn btn--blue btn--small">Kleiner Blauer Button</a>
+      <p>Der kleine Button eignet sich für weniger auffällige Aktionen und schmalere Textinhalte. Ideal für sekundäre Aktionen.</p>
 
-  <h6>
-    h6 (inherits font-weight: default)
-  </h6>
 
-  <p>
-    paragraph (inherits font-weight: default)
-  </p>
+      <h1>Markenfarben Style Guide</h1>
+      <div class="color-grid">
+        <div class="color-item">
+          <div class="color-swatch" style="background-color: #f5f5f5;"></div>
+          <div class="color-details">
+            <div class="color-name">$whitesmoke</div>
+            <div class="color-hex">#f5f5f5</div>
+          </div>
+        </div>
+        <div class="color-item">
+          <div class="color-swatch" style="background-color: #faf0ca;"></div>
+          <div class="color-details">
+            <div class="color-name">$beige</div>
+            <div class="color-hex">#faf0ca</div>
+          </div>
+        </div>
+        <div class="color-item">
+          <div class="color-swatch" style="background-color: #f4d35e;"></div>
+          <div class="color-details">
+            <div class="color-name">$mainYellow</div>
+            <div class="color-hex">#f4d35e</div>
+          </div>
+        </div>
+        <div class="color-item">
+          <div class="color-swatch" style="background-color: #0d3b66;"></div>
+          <div class="color-details">
+            <div class="color-name">$mainBlue</div>
+            <div class="color-hex">#0d3b66</div>
+          </div>
+        </div>
+        <div class="color-item">
+          <div class="color-swatch" style="background: #ee964b"></div>
+          <div class="color-details">
+            <div class="color-name">$orangeMix</div>
+            <div class="color-hex">#f95738</div>
+          </div>
+        </div>
 
-  <p class="has-x-large-font-size">
-    Has X-large font size (inherits font-weight: default)
-  </p>
-  <p class="has-large-font-size">
-    Has large font size (inherits font-weight: default)
-  </p>
-  <p class="has-medium-font-size">
-    Has medium font size (inherits font-weight: default)
-  </p>
-  <p class="has-small-font-size">
-    Has small font size (inherits font-weight: default)
-  </p>
-
-  <h1>Brand Colors Style Guide</h1>
-  <div class="color-grid">
-  <div class="color-item">
-      <div class="color-swatch" style="background-color: #fffaf2;"></div>
-      <div class="color-details">
-        <div class="color-name">$whitesmoke</div>
-        <div class="color-hex">#f5f5f5</div>
       </div>
-    </div>
-    <div class="color-item">
-      <div class="color-swatch" style="background-color: #faf0ca;"></div>
-      <div class="color-details">
-        <div class="color-name">$beige</div>
-        <div class="color-hex">#faf0ca</div>
-      </div>
-    </div>
-    <div class="color-item">
-      <div class="color-swatch" style="background-color: #f4d35e;"></div>
-      <div class="color-details">
-        <div class="color-name">$mainYellow</div>
-        <div class="color-hex">#f4d35e</div>
-      </div>
-    </div>
-    <div class="color-item">
-      <div class="color-swatch" style="background-color: #0d3b66;"></div>
-      <div class="color-details">
-        <div class="color-name">$mainBlue</div>
-        <div class="color-hex">#0d3b66</div>
-      </div>
-    </div>
-    <div class="color-item">
-      <div class="color-swatch" style="background-color: #2d8180;"></div>
-      <div class="color-details">
-        <div class="color-name">$teal</div>
-        <div class="color-hex">#2d8180</div>
-      </div>
-    </div>
-    <div class="color-item">
-      <div class="color-swatch" style="background-color: #ee964b;"></div>
-      <div class="color-details">
-        <div class="color-name">$lightOrange</div>
-        <div class="color-hex">#ee964b</div>
-      </div>
-    </div>
-    <div class="color-item">
-      <div class="color-swatch" style="background-color: #f95738;"></div>
-      <div class="color-details">
-        <div class="color-name">$darkOrange</div>
-        <div class="color-hex">#f95738</div>
-      </div>
+
     </div>
 
   </div>
-
-</div>
-
-
-  <!-- <div>
-
-
-    <h1>HEADLINE</h1>
-    <h1 class="headline headline--large">
-      This is a Large Headline
-    </h1>
-
-    <h2 class="headline headline--large-medium">
-      This is a Large-Medium Headline
-    </h2>
-
-    <h3 class="headline headline--medium">
-      This is a Medium Headline
-    </h3>
-
-    <h4 class="headline headline--small-plus">
-      This is a Small-Plus Headline
-    </h4>
-
-    <h5 class="headline headline--small">
-      This is a Small Headline
-    </h5>
-
-    <h6 class="headline headline--smaller">
-      This is a Smaller Headline
-    </h6>
-
-    <p class="headline headline--tiny">
-      This is Tiny Text (with "Roboto" font)
-    </p>
-
-    <h1>
-      This is a h1
-    </h1>
-
-    <h2>
-      This is a h2
-    </h2>
-
-    <h3>
-      This is a h3
-    </h3>
-
-    <h4>
-      This is a h4
-    </h4>
-
-    <h5>
-      This is a h5
-    </h5>
-
-    <h6>
-      This is a h6
-    </h6>
-
-    <p>
-      This is paragraph
-    </p>
-
-    <p class="has-x-large-font-size"> Has X-large font size </p>
-    <p class="has-large-font-size"> Has large font size </p>
-    <p class="has-medium-font-size"> Has medium font size </p>
-    <p class="has-small-font-size"> Has small font size </p>
-
-  </div> -->
-  <div>
-
-    <!-- Orange Button -->
-    <a href="#" class="btn btn--orange">Orange Button</a>
-
-    <!-- Blue Button -->
-    <a href="#" class="btn btn--blue">Blue Button</a>
-
-  </div>
-
-
-</div>
 
 <?php }
 get_footer();
