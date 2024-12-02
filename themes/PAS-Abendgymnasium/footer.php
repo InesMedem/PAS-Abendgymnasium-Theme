@@ -11,10 +11,11 @@
 
     <div class="contact__wrapper">
 
-      <div class="flex-col">
+      <div class=" contact__inner-wrapper flex-col">
+        <div class="flex-col">
         <span class="headline headline--large">Kontakt</span>
         <span class="headline headline--small"> <span class="">Wir helfen gerne </span></span>
-
+        </div>
         <ul class=" ">
         <li class="contact__icon">
           <svg class="btn btn--orange" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="white">

@@ -1100,6 +1100,9 @@ p {
   width: 50%;
   padding: 2rem;
 }
+.contact__inner-wrapper {
+  gap: 1rem;
+}
 .contact img {
   border-radius: 8px;
 }
@@ -1139,6 +1142,7 @@ p {
   display: flex;
   flex-direction: column;
   margin: 0px;
+  gap: 0.5rem;
 }
 
 .front-text {

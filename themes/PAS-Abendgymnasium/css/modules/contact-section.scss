@@ -8,6 +8,10 @@
     padding: 2rem;
   }
 
+  &__inner-wrapper {
+    gap: 1rem;
+  }
+
   & img {
     border-radius: 8px;
   }
@@ -52,51 +56,6 @@
     display: flex;
     flex-direction: column;
     margin: 0px;
+    gap: 0.5rem;
   }
 }
-
-// .contact {
-//   background-image: url("http://localhost:10014/wp-content/uploads/2024/11/Peter-A.-Silbermann-Schule-Architektur.jpg");
-//   background-size: cover;
-//   background-position: center;
-//   background-repeat: no-repeat;
-
-//   // padding: 5px;
-//   // display: flex;
-//   // justify-content: space-around;
-
-//   &__wrapper {
-//     // background-color: white;
-//     display: flex;
-//   }
-
-//   &__container {
-//     // margin: 15px;
-//     // max-width: 1300px;
-//     // margin: 0 auto;
-//   }
-//   & span {
-//     color: $mainBlue;
-//   }
-//   &__icon {
-//     display: flex;
-//     align-items: center;
-//   }
-
-//   &__icon svg {
-//     margin-right: 1rem;
-//   }
-
-//   &__icon a p {
-//     color: $mainBlue;
-//     font-weight: 500;
-//   }
-//   &__wrapper ul {
-//     list-style-type: none;
-//     padding-left: 0;
-//     text-decoration: none;
-//     display: flex;
-//     flex-direction: column;
-//     margin: 0px;
-//   }
-// }
