@@ -547,7 +547,7 @@ li {
   color: hsl(48, 83%, 89%);
 }
 .site-header h3 {
-  font-weight: 400;
+  font-weight: 300;
   color: white;
   letter-spacing: -1px;
   text-shadow: 0px 10px 20px rgba(0, 0, 0, 0.146);
@@ -995,9 +995,13 @@ p {
 }
 
 .post-item {
-  border-bottom: 1px dotted #DEDEDE;
+  border-bottom: 1px dotted #dedede;
   padding-bottom: 1.7rem;
   margin-bottom: 1.7rem;
+}
+.post-item h2 {
+  color: #173f58;
+  font-weight: 400;
 }
 .post-item:last-of-type {
   border-bottom: none;

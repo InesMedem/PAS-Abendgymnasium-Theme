@@ -21,7 +21,7 @@
           <h3 class="headline--small-plus ">
           <span class="">Peter-A.-Silbermann-Schule</span>
           </h3>
-          <p><span class="highlight">Staatliches Abendgymnasium für Berufstätige</span></p>
+          <p><span class="">Staatliches Abendgymnasium für Berufstätige</span></p>
         </div></a>
       </div>
 
