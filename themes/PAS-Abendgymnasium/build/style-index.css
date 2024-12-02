@@ -104,6 +104,28 @@ li {
   font-weight: 500;
 }
 
+.page-section {
+  padding-top: 1.6rem;
+  padding-bottom: 1.6rem;
+}
+@media (min-width: 530px) {
+  .page-section {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+}
+.page-section p:last-of-type {
+  margin-bottom: 0;
+}
+
+.generic-content p,
+.generic-content li {
+  font-size: 1.15rem;
+}
+.generic-content img {
+  border-radius: 8px;
+}
+
 .flex-col {
   display: flex;
   flex-direction: column;

@@ -115,26 +115,10 @@
       padding-top: 0;
       padding-bottom: 0;
       top: 0;
+      // display: flex;
+      // flex-direction: column;
     }
   }
-
-  // &__search-trigger {
-  //   cursor: pointer;
-  //   color: #fff;
-  //   font-size: 1.2rem;
-  //   position: absolute;
-  //   top: 6px;
-  //   right: 16px;
-
-  //   @include atSmall {
-  //     top: 4px;
-  //     font-size: 1.4rem;
-  //   }
-
-  //   @include atMedium {
-  //     display: none;
-  //   }
-  // }
 
   &__menu-trigger {
     color: #fff;
@@ -154,26 +138,6 @@
       display: none;
     }
   }
-
-  // &__util {
-  //   padding: 0 0 0 20px;
-
-  //   @include atMedium {
-  //     padding: 0;
-  //     float: right;
-  //   }
-  // }
-
-  // &__btn {
-  //   margin-right: 20px;
-  //   @include atMedium {
-  //     float: left;
-  //   }
-  // }
-
-  // .btn--with-photo {
-  //   margin-right: 0;
-  // }
 }
 
 .main-navigation .current-menu-item a,

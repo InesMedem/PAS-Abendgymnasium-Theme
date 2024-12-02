@@ -8,40 +8,28 @@
   padding: 12px 24px;
   transition: transform 0.3s ease;
   cursor: pointer;
-  // border: #333 1px solid;
 
   &--orange {
     background: linear-gradient(215deg, $lightOrange, #ef752a);
-    // border: 1px white solid;
   }
 
   &--orange:hover {
     transform: scale(1.1);
     color: white !important;
-
-    // background-color: white;
-    // background: white;
-    // color: $lightOrange;
-    // border: 1px $lightOrange solid;
   }
 
   &--blue {
-    // background: linear-gradient(215deg, #4d79a0, $mainBlue);
     background-color: $mainBlue;
   }
 
   &--blue:hover {
     transform: scale(1.1);
-    // background-color: white;
-    // color: $mainBlue;
-    // border: 1px $mainBlue solid;
   }
 
   &--large {
     font-size: 1.3rem;
     padding: 16px 34px;
     border-radius: 7px;
-    // border: 1px white solid;
     @include atSmall {
       font-size: 1.9rem;
     }

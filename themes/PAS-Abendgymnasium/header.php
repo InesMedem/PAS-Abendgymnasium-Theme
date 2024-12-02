@@ -25,7 +25,6 @@
         </div></a>
       </div>
 
-      <!-- <span class="js-search-trigger site-header__search-trigger"><i class="fa fa-search" aria-hidden="true"></i></span> -->
       <div class="site-header__nav">
         <i class="site-header__menu-trigger fa fa-bars" aria-hidden="true"></i>
         <div class="site-header__menu">
@@ -38,7 +37,6 @@
           </nav>
           <div class="site-header__btn">
             <a href="<?php echo site_url('/voraussetzungen-und-anmeldung') ?>" class="btn btn--medium btn--orange"><b>Anmeldung</b></a>
-            <!-- <span class="search-trigger js-search-trigger"><i class="fa fa-search" aria-hidden="true"></i></span> -->
           </div>
         </div>
       </div>
