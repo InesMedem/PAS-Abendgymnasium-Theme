@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
     align-items: left;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
 
   & span {
@@ -14,6 +14,10 @@
 
 .aktuelles-summary {
   display: flex;
+
+  & p {
+    margin: 0px;
+  }
 
   &__outer {
     gap: 1rem;

@@ -1,9 +1,8 @@
 .front-text {
   background-color: $mainBlue;
   color: white;
-
-  //   background-color: $beige;
-  //   color: $olive;
+  // background-color: $beige;
+  // color: $olive;
 
   align-content: center;
   text-align: center;
@@ -13,5 +12,10 @@
   & h2 h4 {
     text-decoration: underline;
     font-weight: 500;
+  }
+
+  & span {
+    text-decoration: underline;
+    text-transform: uppercase;
   }
 }

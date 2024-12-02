@@ -820,7 +820,7 @@ p {
   display: flex;
   flex-direction: column;
   align-items: left;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 .aktuelles span {
   color: #173f58;
@@ -829,6 +829,9 @@ p {
 
 .aktuelles-summary {
   display: flex;
+}
+.aktuelles-summary p {
+  margin: 0px;
 }
 .aktuelles-summary__outer {
   gap: 1rem;
@@ -1097,6 +1100,9 @@ p {
   width: 50%;
   padding: 2rem;
 }
+.contact img {
+  border-radius: 8px;
+}
 .contact__img-wrapper {
   padding: 2rem;
   width: 50%;
@@ -1146,6 +1152,10 @@ p {
 .front-text h2 h4 {
   text-decoration: underline;
   font-weight: 500;
+}
+.front-text span {
+  text-decoration: underline;
+  text-transform: uppercase;
 }
 
 /*# sourceMappingURL=style-index.css.map*/

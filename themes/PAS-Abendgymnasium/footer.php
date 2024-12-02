@@ -48,11 +48,11 @@
 
     <div class="contact__img-wrapper">
   
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2429.7023617867435!2d13.316837076264033!3d52.484524572051804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41652370283f6917%3A0x6da8775082b15d25!2sPeter-A.-Silbermann-Schule!5e0!3m2!1sen!2sau!4v1733052804490!5m2!1sen!2sau" width="410" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2429.7023617867435!2d13.316837076264033!3d52.484524572051804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41652370283f6917%3A0x6da8775082b15d25!2sPeter-A.-Silbermann-Schule!5e0!3m2!1sen!2sau!4v1733052804490!5m2!1sen!2sau" width="410" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
    
-      <!-- <img src="http://localhost:10014/wp-content/uploads/2024/11/Peter-A.-Silbermann-Schule-Architektur.jpg" alt="A fresh apple" width="500" height="500"> -->
-
-    </div>
+      <img src="https://abendgymnasium.de/wp-content/uploads/2024/09/Kollegium-1B.jpg" alt="A fresh apple" width="500" height="500">
+      <span class="headline headline--small"> <span class="">Unser Kollegium freut sich auf Sie!</span></span>
+      </div>
 
   </div>
 

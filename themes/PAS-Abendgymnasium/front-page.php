@@ -1,8 +1,6 @@
 <?php
 get_header(); ?>
 
-
-
 <div class="page-banner overlay ">
   <div class="page-banner__bg-image"
 
@@ -29,7 +27,7 @@ get_header(); ?>
 
 <div class="front-text">
   <div class="aktuelles__headline container container--narrow">
-    <h3 class="headline headline--medium"> Am ältesten Abendgymnasium Deutschlands können Sie <span>kostenlos</span> das Abitur, die Hochschulreife oder die Fachhochschulreife nachholen und ab der Qualifikationsphase BAföG beantragen.</h3>
+    <h3 class="headline headline--small-plus"> Am ältesten Abendgymnasium Deutschlands können Sie <span>kostenlos</span> das Abitur, die Hochschulreife oder die Fachhochschulreife nachholen und ab der Qualifikationsphase BAföG beantragen.</h3>
   </div>
 </div>
 
@@ -55,7 +53,6 @@ get_header(); ?>
   </div>
 
   <?php
-  // Custom query to get only 5 posts
   $args = array(
     'posts_per_page' => 5, // Limit to 5 posts
   );
@@ -89,14 +86,7 @@ get_header(); ?>
   wp_reset_postdata();
   ?>
 
-  <p class="t-center no-margin">
-    <a href="<?php echo site_url('/aktuelles'); ?>" class="btn btn--blue">Aktuelles</a>
-  </p>
-
 </div>
-
-
-
 
 
 <?php get_footer(); ?>
