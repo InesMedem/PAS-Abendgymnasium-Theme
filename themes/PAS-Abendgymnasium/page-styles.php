@@ -52,17 +52,17 @@ while (have_posts()) {
       <p class="has-small-font-size">Small Schriftgröße</p>
 
 
-      <h2>Buttons</h2>
+      <h2>Buttons Großer</h2>
 
-      <!-- Orange Button -->
-      <a href="#" class="btn btn--orange">Oranger Button</a>
+
+      <!-- <a href="#" class="btn btn--orange">Oranger Button</a>
       <p>Der orange Button verwendet einen Verlauf und hebt sich durch seine warme Farbgebung hervor. Ideal für Call-to-Action (CTA) Elemente.</p>
 
-      <!-- Blue Button -->
+
       <a href="#" class="btn btn--blue">Blauer Button</a>
       <p>Der blaue Button nutzt das Hauptblau der Seite. Er eignet sich gut für wichtige Aktionen oder Links.</p>
 
-      <h3>Button Größen</h3>
+      <h3>Button Größen</h3> -->
 
       <!-- Large Button -->
       <a href="#" class="btn btn--orange btn--large">Großer Oranger Button</a>
