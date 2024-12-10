@@ -16,10 +16,10 @@ get_header(); ?>
   </div>
   <div class="page-banner__content container t-center c-white container--hero">
     <h1 class="headline headline--large"><?php the_title(); ?></h1>
-    <h3 class="headline headline--small container--narrower ">
+    <h3 class="headline headline--small container--narrower">
       <span class="highlight"><?php echo strip_tags(get_the_excerpt(), '<h3>'); ?></span>
     </h3>
-    <a href="#" class="btn btn--large btn--blue">Jetzt Anmelden</a>
+    <a href="#" class="btn btn--large btn--blue">Jetzt anmelden</a>
   </div>
 </div>
 
@@ -41,7 +41,7 @@ get_header(); ?>
 
 <!--*** OUR BLOG  ***-->
 
-<div class="container container--narrow aktuelles-summary__outer card">
+<div class="container container--narrow aktuelles-summary__outer ">
 
   <div class="aktuelles">
     <div class="aktuelles__headline container">
