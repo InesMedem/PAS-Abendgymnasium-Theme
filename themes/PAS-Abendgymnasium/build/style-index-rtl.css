@@ -54,6 +54,10 @@ img {
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.146);
 }
 
+.remove-imgStyles {
+  box-shadow: none !important;
+}
+
 .card {
   border-radius: 8px;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.146);
@@ -531,7 +535,6 @@ li {
 
 .site-header {
   z-index: 3;
-  position: absolute;
   display: flex;
   width: 100%;
   align-items: center;
