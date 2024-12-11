@@ -47,8 +47,8 @@ function pageBanner($args = NULL) {
     <div class="page-banner__bg-image" 
          style="background-image: url(<?php echo $args['photo']; ?>)">
     </div>
-    <div class="page-banner__content container container--narrow">
-        <h1 class=" headline headline--large page-banner__title"><?php echo $args['title']; ?></h1>
+    <div class="page-banner__content ">
+        <h1 class=" headline headline--large "><?php echo $args['title']; ?></h1>
         <h3 class=" headline headline--small ">
            <span class="highlight"><?php echo $args['subtitle']; ?></span> 
         </h3>

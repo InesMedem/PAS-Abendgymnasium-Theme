@@ -1,27 +1,31 @@
-<?php
-get_header(); ?>
+<?php get_header(); ?>
 
-<div class="page-banner overlay ">
-  <div class="page-banner__bg-image"
-
-    style="background-image: url(<?php
-                                  $thumbnail_url = get_the_post_thumbnail_url(null, 'header-crop');
-                                  if ($thumbnail_url) {
-                                    echo $thumbnail_url;
-                                  } else {
-                                    echo get_theme_file_uri('images/Friedrich-Ebert-Schule_Front.jpg');
-                                  }
-                                  ?>)">
-
+<div class="hero-banner">
+  <div class="hero-banner__bg-image" style="background-image: url(<?php
+    $thumbnail_url = get_the_post_thumbnail_url(null, 'header-crop');
+    if ($thumbnail_url) {
+      echo $thumbnail_url;
+    } else {
+      echo get_theme_file_uri('images/Friedrich-Ebert-Schule_Front.jpg');
+    }
+  ?>)">
   </div>
-  <div class="page-banner__content container t-center c-white container--hero">
-    <h1 class="headline headline--large"><?php the_title(); ?></h1>
-    <h3 class="headline headline--small container--narrower">
-      <span class="highlight"><?php echo strip_tags(get_the_excerpt(), '<h3>'); ?></span>
+  <div class="hero-banner__content">
+    <!-- <h1 class=" headline headline--large "><?php the_title(); ?></h1> -->
+    <h2 class="headline "> Charlottenburg-Wilmersdorf</h2>
+
+    <h1 class=" headline headline--large">Abendschule für Berufstätige</h1>
+<div class="hero-banner__headlineInner">  
+  <h3 class=" headline headline--small">
+      <!-- <span class="highlight"><?php echo strip_tags(get_the_excerpt(), '<h3>'); ?></span> -->
+      <span class="highlight"> Das Abitur (oder den schulischen Teil der Fachhochschulreife) <br>und MSA kostenlos und flexibel nachholen</span>
     </h3>
-    <a href="#" class="btn btn--large btn--blue">Jetzt anmelden</a>
+    </div>  
+    <a href="#" class="btn btn--large btn--yellow">Jetzt anmelden</a>
   </div>
 </div>
+
+
 
 <!-- first section -->
 

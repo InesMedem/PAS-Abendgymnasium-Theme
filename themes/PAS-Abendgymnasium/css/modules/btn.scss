@@ -13,13 +13,22 @@
     background: linear-gradient(215deg, $lightOrange, #ef752a);
   }
 
+  &--yellow {
+    background-color: hsl(48, 83%, 89%);
+    color: $olive;
+  }
+
+  &--yellow:hover {
+    transform: scale(1.1);
+  }
+
   &--orange:hover {
     transform: scale(1.1);
-    color: white !important;
   }
 
   &--blue {
     background-color: $mainBlue;
+    color: white !important;
   }
 
   &--blue:hover {
