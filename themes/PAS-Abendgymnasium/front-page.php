@@ -21,7 +21,8 @@
       <span class="highlight"> Das Abitur (oder den schulischen Teil der Fachhochschulreife) <br>und MSA kostenlos und flexibel nachholen</span>
     </h3>
     </div>  
-    <a href="#" class="btn btn--large btn--yellow">Jetzt anmelden</a>
+    <a href="<?php echo site_url('/voraussetzungen-und-anmeldung') ?>" class="btn btn--large btn--yellow">Jetzt anmelden</a>
+    
   </div>
 </div>
 

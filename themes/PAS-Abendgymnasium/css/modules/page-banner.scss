@@ -51,9 +51,14 @@
   color: white;
   position: relative;
   display: flex;
+  align-items: center;
   padding: 40px 0;
   overflow: hidden;
   height: 30vh;
+  width: 100%;
+  margin: auto 0;
+  align-items: center;
+  justify-content: center;
 
   &__bg-image {
     background-size: cover;
@@ -79,5 +84,6 @@
 
   &__content {
     gap: 1.5rem;
+    width: 1100px;
   }
 }
