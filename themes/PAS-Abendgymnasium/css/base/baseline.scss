@@ -67,10 +67,10 @@ li {
 
 .page-section {
   padding-top: 1.6rem;
-  padding-bottom: 1.6rem;
+  // padding-bottom: 1.6rem;
   @include atSmall {
     padding-top: 3.5rem;
-    padding-bottom: 3.5rem;
+    // padding-bottom: 2.5rem;
   }
 
   p:last-of-type {
@@ -98,18 +98,18 @@ li {
   }
 }
 
-.page-section {
-  padding-top: 1.6rem;
-  padding-bottom: 1.6rem;
-  @include atSmall {
-    padding-top: 3.5rem;
-    padding-bottom: 3.5rem;
-  }
+// .page-section {
+//   padding-top: 1.6rem;
+//   padding-bottom: 1.6rem;
+//   @include atSmall {
+//     padding-top: 3.5rem;
+//     padding-bottom: 3.5rem;
+//   }
 
-  p:last-of-type {
-    margin-bottom: 0;
-  }
-}
+//   p:last-of-type {
+//     margin-bottom: 0;
+//   }
+// }
 
 .generic-content {
   p,

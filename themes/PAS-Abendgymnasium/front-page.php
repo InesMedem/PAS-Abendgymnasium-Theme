@@ -52,7 +52,7 @@
     <div class="aktuelles__headline container">
 
       <span class="headline headline--large">Neues und Aktuelles </span>
-      <span class="headline headline--small"> <span class="highlight"> Neues aus dem Abendgymnasium </span></span>
+      <!-- <span class="headline headline--small"> <span class="highlight"> Neues aus dem Abendgymnasium </span></span> -->
 
     </div>
   </div>
