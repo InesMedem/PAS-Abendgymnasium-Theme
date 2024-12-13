@@ -101,27 +101,6 @@ while (have_posts()) {
           </div>
         </div>
         <div class="color-item">
-          <div class="color-swatch" style="background-color: #f4d35e;"></div>
-          <div class="color-details">
-            <div class="color-name">$mainYellow</div>
-            <div class="color-hex">#f4d35e</div>
-          </div>
-        </div>
-        <div class="color-item">
-          <div class="color-swatch" style="background-color: #fbf1cc;"></div>
-          <div class="color-details">
-            <div class="color-name">$lightYellow</div>
-            <div class="color-hex">#fbf1cc</div>
-          </div>
-        </div>
-        <div class="color-item">
-          <div class="color-swatch" style="background-color: #f5e6b3;"></div>
-          <div class="color-details">
-            <div class="color-name">$selectedYellow</div>
-            <div class="color-hex">#f5e6b3</div>
-          </div>
-        </div>
-        <div class="color-item">
           <div class="color-swatch" style="background: #ee964b"></div>
           <div class="color-details">
             <div class="color-name">$orangeMix</div>

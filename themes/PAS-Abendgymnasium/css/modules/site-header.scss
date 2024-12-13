@@ -1,8 +1,9 @@
 .site-header {
   z-index: 3;
   // position: absolute;
-  // background-color: hsl(48, 83%, 89%);
-  background-color: #f5e6b3;
+  background-color: $beige;
+  // background-color: $mainYellow;
+
   display: flex;
   width: 100%;
   align-items: center;

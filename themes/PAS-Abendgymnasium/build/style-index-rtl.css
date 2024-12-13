@@ -479,7 +479,7 @@ li {
   background: linear-gradient(-215deg, #ee964b, #ef752a);
 }
 .btn--yellow {
-  background-color: hsl(48, 83%, 89%);
+  background-color: #fbf1cc;
   color: #94864c;
 }
 .btn--yellow:hover {
@@ -522,7 +522,7 @@ li {
 
 .site-header {
   z-index: 3;
-  background-color: #f5e6b3;
+  background-color: #fbf1cc;
   display: flex;
   width: 100%;
   align-items: center;
@@ -680,7 +680,7 @@ li {
   justify-content: center;
   overflow: hidden;
   align-items: center;
-  height: 80vh;
+  height: 82vh;
   /* Set background image */
 }
 .hero-banner__bg-image {
