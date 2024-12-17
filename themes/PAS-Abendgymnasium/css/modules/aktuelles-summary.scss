@@ -15,6 +15,13 @@
 .aktuelles-summary {
   display: flex;
 
+  @media (max-width: 768px) {
+    flex-wrap: wrap;
+    background-color: antiquewhite;
+    align-items: center;
+    justify-content: center;
+  }
+
   & p {
     margin: 0px;
   }
