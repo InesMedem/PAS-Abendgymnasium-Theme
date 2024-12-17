@@ -8,10 +8,8 @@
 
 <div class="contact">
   <div class="container container--narrow contact__container">
-
     <div class="contact__wrapper">
-
-      <div class=" contact__inner-wrapper flex-col">
+      <div class="contact__inner-wrapper flex-col">
         <div class="flex-col">
         <span class="headline headline--large">Kontakt</span>
         <span class="headline headline--small"> <span class="">Wir helfen gerne </span></span>
