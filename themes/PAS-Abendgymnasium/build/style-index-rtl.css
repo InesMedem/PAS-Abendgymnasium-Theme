@@ -530,7 +530,6 @@ li {
 }
 .site-header__container {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   margin: 0 auto;
   width: 100%;
@@ -538,7 +537,6 @@ li {
 }
 .site-header__menu {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   font-size: 19px;
 }
@@ -569,7 +567,6 @@ li {
 }
 .site-header__logo {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
   margin-top: 10px;
@@ -645,6 +642,10 @@ li {
   }
   .site-header__logoText p {
     font-size: small;
+  }
+  .site-header__container {
+    padding-right: 10px;
+    padding-left: 10px;
   }
 }
 
