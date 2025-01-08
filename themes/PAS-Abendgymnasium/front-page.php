@@ -14,7 +14,7 @@
     <!-- <h1 class=" headline headline--large "><?php the_title(); ?></h1> -->
     <h2 class="headline "> Charlottenburg-Wilmersdorf</h2>
 
-    <h1 class=" headline headline--large">Abendschule für Berufstätige</h1>
+    <h1 class=" headline headline--large">Staatliche Abendschule für Berufstätige</h1>
 <div class="hero-banner__headlineInner">  
   <h3 class=" headline headline--small">
       <!-- <span class="highlight"><?php echo strip_tags(get_the_excerpt(), '<h3>'); ?></span> -->

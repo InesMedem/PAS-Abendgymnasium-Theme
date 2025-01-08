@@ -77,7 +77,7 @@
             <a href="https://www.youtube.com/@DasBerlinerAbendgymnasium" class="btn btn--small btn--orange"><i class="fa fa-youtube" aria-hidden="true"></i></a>
           </li>
           <li>
-            <a href="#" class="btn btn--small btn--orange"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/silbermann.abendgymnasium/" class="btn btn--small btn--orange"><i class="fa fa-instagram" aria-hidden="true"></i></a>
           </li>
       </nav>
     </div>
