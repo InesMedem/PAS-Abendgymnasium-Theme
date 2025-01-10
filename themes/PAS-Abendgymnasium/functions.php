@@ -39,7 +39,7 @@ function pageBanner($args = NULL) {
     // Determine the background image:
     // Use post thumbnail if available; otherwise, fall back to $args['photo'] or a default image.
     if (empty($args['photo'])) {
-        $args['photo'] = get_the_post_thumbnail_url(null, 'header-crop') ? get_the_post_thumbnail_url(null, 'header-crop') : get_theme_file_uri('images/priscilla-du-preez-XkKCui44iM0-unsplash.jpg');
+        $args['photo'] = get_the_post_thumbnail_url(null, 'header-crop') ? get_the_post_thumbnail_url(null, 'header-crop') : get_theme_file_uri('images/Friedrich-Ebert-Schule_Front.jpg');
     }
 ?>
 
@@ -71,8 +71,6 @@ function PAS_files()
     wp_enqueue_style('PAS-extra-styles', get_theme_file_uri('/build/index.css'));
 }
 
-
-
 add_action('wp_enqueue_scripts', 'PAS_files');
 
 function PAS_features() {
@@ -90,10 +88,10 @@ add_action('after_setup_theme', 'PAS_features');
 
 //******************************* SVG Support
 
-function allow_svg_upload( $mimes ) {
-    $mimes['svg'] = 'image/svg+xml';
-    return $mimes;
-}
+// function allow_svg_upload( $mimes ) {
+//     $mimes['svg'] = 'image/svg+xml';
+//     return $mimes;
+// }
 
-add_filter( 'upload_mimes', 'allow_svg_upload' );
+// add_filter( 'upload_mimes', 'allow_svg_upload' );
 
