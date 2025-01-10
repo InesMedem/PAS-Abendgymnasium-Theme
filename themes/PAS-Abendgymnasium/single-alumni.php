@@ -37,7 +37,7 @@ while (have_posts()) {
     // Check if the current page has any children
     $child_pages = get_pages(array(
       'child_of' => get_the_ID(),
-      'post_type' => 'page'
+      'post_type' => 'alumni'
     ));
 
 
