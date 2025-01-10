@@ -7,7 +7,7 @@ while (have_posts()) {
   pageBanner(array(
     // 'title' => 'hello Title',
     'photo' => get_theme_file_uri("images/Friedrich-Ebert-Schule_Front.jpg"),
-    'subtitle' => 'Unsere Hörer*innen'
+    'subtitle' => 'Liebe ehemalige Hörerinnen und Hörer der PAS!'
   ));
 
 ?>
