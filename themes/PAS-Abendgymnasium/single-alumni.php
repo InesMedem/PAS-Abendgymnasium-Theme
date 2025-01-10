@@ -6,7 +6,7 @@ while (have_posts()) {
   the_post();
   pageBanner(array(
     // 'title' => 'hello Title',
-    'photo' => 'https://static.vecteezy.com/vite/assets/photo-masthead-375-BoK_p8LG.webp',
+    'photo' => get_theme_file_uri("images/Friedrich-Ebert-Schule_Front.jpg"),
     'subtitle' => 'Unsere Hörer*innen'
   ));
 
