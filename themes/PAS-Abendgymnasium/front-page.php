@@ -18,7 +18,7 @@
 <div class="hero-banner__headlineInner">  
   <h3 class=" headline headline--small">
       <!-- <span class="highlight"><?php echo strip_tags(get_the_excerpt(), '<h3>'); ?></span> -->
-      <span class="highlight"> Das Abitur (oder den schulischen Teil der Fachhochschulreife) und MSA kostenlos nachholen</span>
+      <span class="highlight"> Das Abitur (oder den schulischen Teil der Fachhochschulreife) <br/>und MSA kostenlos nachholen</span>
     </h3>
     </div>  
     <a href="<?php echo site_url('/voraussetzungen-und-anmeldung') ?>" class="btn btn--large btn--yellow">Jetzt anmelden</a>
