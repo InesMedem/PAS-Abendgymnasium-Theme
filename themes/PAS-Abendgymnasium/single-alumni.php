@@ -18,13 +18,13 @@ while (have_posts()) {
           <span class="metabox__main">Veröffentlicht von <?php the_author_posts_link(); ?> am <?php the_time('n/j/y'); ?> in <?php echo get_the_category_list(', '); ?>
           </span>
         </p>
-      </div>
+      </div> -->
 
     <div class="generic-content">
 
       <?php the_content(); ?>
     </div>
-  </div> -->
+  </div>
 <?php
 
 }
