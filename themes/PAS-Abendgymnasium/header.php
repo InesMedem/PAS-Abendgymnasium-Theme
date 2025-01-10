@@ -33,7 +33,15 @@
               <?php wp_nav_menu(array(
                 'theme_location' => 'headerMenuLocation'
               )) ?>
+              <li class="menu-item-has-children">
+                <a href="#">Interne 🔐</a>
+                <ul class="sub-menu">
+                  <li><a href="https://abendgymnasium.inesweb.tech/vertretungsplan/">Vertretungsplan 🔐    </a></li>
+                  <li><a href="https://abendgymnasium.inesweb.tech/nachhilfe/">Informationen für Q 🔐</a></li>
+                </ul>
+              </li>
             </ul>
+            
           </nav>
           <div class="site-header__btn ">
             <a href="<?php echo site_url('/voraussetzungen-und-anmeldung') ?>" class="btn btn--medium btn--blue"><b>Anmeldung</b></a>

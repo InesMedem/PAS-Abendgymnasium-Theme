@@ -26,6 +26,7 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
+    color: white;
   }
 
   &__nav ul li {
@@ -157,4 +158,33 @@
 .main-navigation .current-menu-item a,
 .main-navigation a:hover {
   color: $beige;
+}
+
+.menu-item-has-children {
+  position: relative;
+}
+
+.menu-item-has-children .sub-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item-has-children:hover .sub-menu {
+  display: block;
+}
+
+.sub-menu li {
+  padding: 10px;
+}
+
+.sub-menu li a {
+  text-decoration: none;
+  color: #000;
 }
