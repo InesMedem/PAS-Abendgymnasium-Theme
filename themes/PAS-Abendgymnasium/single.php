@@ -3,9 +3,6 @@ get_header();
 while (have_posts()) {
   the_post(); 
   pageBanner(array(
-    // 'title' => 'hello Title',
-    // 'photo' => 'https://static.vecteezy.com/vite/assets/photo-masthead-375-BoK_p8LG.webp',
-    // 'subtitle' => 'this is a subtitle'
 ));
 ?>
 
