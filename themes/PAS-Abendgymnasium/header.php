@@ -34,7 +34,7 @@
                 'theme_location' => 'headerMenuLocation'
               )) ?>
               <li class="menu-item-has-children">
-                <a href="#">Interne 🔐</a>
+                <a href="#">Internes 🔐</a>
                 <ul class="sub-menu">
                   <li><a href="https://abendgymnasium.inesweb.tech/vertretungsplan/">Vertretungsplan 🔐    </a></li>
                   <li><a href="https://abendgymnasium.inesweb.tech/nachhilfe/">Informationen für Q 🔐</a></li>
