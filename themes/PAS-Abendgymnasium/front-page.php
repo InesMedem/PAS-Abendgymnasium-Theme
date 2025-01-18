@@ -32,7 +32,7 @@
 
 <div class="front-text">
   <div class="aktuelles__headline container container--narrow">
-    <h3 class="headline headline--small-plus"> Am ältesten Abendgymnasium Deutschlands können Sie <span>kostenlos</span> das Abitur, die Hochschulreife oder die Fachhochschulreife nachholen und ab der Qualifikationsphase BAföG beantragen.</h3>
+    <h3 class="headline headline--small-plus"> Am ältesten Abendgymnasium Deutschlands können Sie <span>kostenlos</span> das Abitur, die Hochschulreife oder die Fachhochschulreife nachholen und ab der Qualifikationsphase BAföG beantragen ab Q2.</h3>
   </div>
 </div>
 
